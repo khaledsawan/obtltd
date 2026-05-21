@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">OBT Ltd</title>
+  <rect width="320" height="96" fill="#0c0d0f" rx="8"/>
+  <rect x="16" y="16" width="64" height="64" fill="#b9882d" rx="6"/>
+  <path d="M35 31h17c11 0 18 7 18 17s-7 17-18 17H35V31zm15 27c6 0 10-4 10-10s-4-10-10-10h-5v20h5z" fill="#fff"/>
+  <text x="100" y="42" fill="#b9882d" font-size="24" font-family="Arial, sans-serif" font-weight="700">OBT Ltd</text>
+  <text x="100" y="68" fill="#ffffff" font-size="15" font-family="Arial, sans-serif">Industrial Supply Solutions</text>
+</svg>
