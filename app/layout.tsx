@@ -25,6 +25,7 @@ export default function RootLayout({
     <html
       lang={config.site.locale}
       dir={config.site.direction}
+      data-scroll-behavior="smooth"
       className="h-full antialiased"
       style={
         {

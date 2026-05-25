@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact Us | OBT Ltd - Precision Engineering &amp; Consulting</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;family=Metropolis:wght@600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .whisper-shadow {
+            box-shadow: 0px 10px 30px rgba(26, 26, 26, 0.04);
+        }
+
+        .form-focus-border:focus {
+            outline: none;
+            border-bottom: 1px solid #D4AF37;
+        }
+    </style>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "secondary-fixed-dim": "#c8c6c5", "surface-container-low": "#f3f3f3", "primary-container": "#d4af37", "on-background": "#1a1c1c", "surface-container-highest": "#e2e2e2", "secondary-fixed": "#e5e2e1", "on-tertiary-fixed": "#1b1c1c", "inverse-on-surface": "#f1f1f1", "on-primary-container": "#554300", "on-error": "#ffffff", "outline-variant": "#d0c5af", surface: "#f9f9f9", "inverse-surface": "#2f3131", "surface-bright": "#f9f9f9", "on-tertiary-container": "#454545", "on-secondary-fixed-variant": "#474746", "on-secondary-fixed": "#1c1b1b", "primary-fixed-dim": "#e9c349", "surface-container-high": "#e8e8e8", "surface-tint": "#735c00", "tertiary-fixed-dim": "#c8c6c6", "on-secondary-container": "#636262", "tertiary-container": "#b4b2b2", "surface-container": "#eeeeee", "primary-fixed": "#ffe088", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-surface-variant": "#4d4635", "on-tertiary-fixed-variant": "#474747", "on-primary-fixed": "#241a00", primary: "#735c00", "surface-container-lowest": "#ffffff", "secondary-container": "#e2dfde", error: "#ba1a1a", "surface-variant": "#e2e2e2", "surface-dim": "#dadada", "error-container": "#ffdad6", "tertiary-fixed": "#e4e2e2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#574500", secondary: "#5f5e5e", tertiary: "#5e5e5e", "on-surface": "#1a1c1c", outline: "#7f7663", "inverse-primary": "#e9c349", background: "#f9f9f9" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "margin-desktop": "80px", "container-max": "1440px", base: "8px", gutter: "24px", "section-gap": "120px", "margin-mobile": "20px" }, fontFamily: { "display-lg": ["Metropolis"], "headline-lg": ["Metropolis"], "body-md": ["Manrope"], "label-caps": ["Manrope"], "headline-md": ["Metropolis"], "body-lg": ["Manrope"], "headline-lg-mobile": ["Metropolis"], headline: ["Metropolis"], display: ["Metropolis"], body: ["Manrope"], label: ["Manrope"] }, fontSize: { "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["40px", { lineHeight: "1.2", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }], "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "700" }], "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }], "headline-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "600" }] } } } };</script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant shadow-[0px_10px_30px_rgba(26,26,26,0.04)]">
+        <div
+            class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="font-display-lg text-headline-md tracking-tighter text-on-surface">OBT Ltd</div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-10"><a
+                    class="text-secondary font-medium hover:text-primary transition-colors duration-300"
+                    href="#">Home</a>
+                <a class="text-secondary font-medium hover:text-primary transition-colors duration-300"
+                    href="#">Products</a>
+                <a class="text-secondary font-medium hover:text-primary transition-colors duration-300" href="#">Product
+                    Details</a>
+                <a class="text-secondary font-medium hover:text-primary transition-colors duration-300" href="#">Who We
+                    Are</a>
+                <a class="text-secondary font-medium hover:text-primary transition-colors duration-300" href="#">Our
+                    Work</a>
+                <a class="text-secondary font-medium hover:text-primary transition-colors duration-300" href="#">Our
+                    Services</a>
+                <a class="text-secondary font-medium hover:text-primary transition-colors duration-300" href="#">Contact
+                    Us</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden lg:block px-8 py-3 bg-primary-container text-white font-bold rounded-lg hover:opacity-90 transition-all active:scale-95">Download
+                    Catalog</button>
+                <button
+                    class="flex items-center gap-2 text-primary font-bold hover:text-on-surface-variant transition-colors">
+                    <span class="material-symbols-outlined text-[20px]">chat</span>
+                    <span class="hidden sm:inline">WhatsApp Contact</span>
+                </button>
+                <!-- Mobile Menu Icon -->
+                <button class="md:hidden text-on-surface">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-section-gap">
+        <!-- Hero Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-end">
+                <div class="max-w-2xl">
+                    <span class="font-label-caps text-label-caps text-primary tracking-[0.2em] mb-4 block">GET IN
+                        TOUCH</span>
+                    <h1 class="font-display-lg text-display-lg mb-6 leading-[1.1]">Connecting Precision with Global
+                        Ambition.</h1>
+                    <p class="font-body-lg text-body-lg text-secondary max-w-lg">Whether you are initiating a new
+                        project or seeking high-level consultation, our partners are ready to provide technical
+                        excellence and architectural rigor to your vision.</p>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="flex flex-col gap-6 items-end">
+                        <div class="flex items-center gap-4 group cursor-pointer">
+                            <div class="text-right">
+                                <p class="font-label-caps text-[10px] text-outline">GENERAL INQUIRIES</p>
+                                <p class="font-headline-md text-headline-md">info@obt-engineering.com</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 flex items-center justify-center bg-surface border border-outline-variant group-hover:bg-primary-container group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group cursor-pointer">
+                            <div class="text-right">
+                                <p class="font-label-caps text-[10px] text-outline">DIRECT ACCESS</p>
+                                <p class="font-headline-md text-headline-md">+44 (0) 20 7946 0123</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 flex items-center justify-center bg-surface border border-outline-variant group-hover:bg-primary-container group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact & Map Grid -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter">
+                <!-- Inquiry Form -->
+                <div
+                    class="lg:col-span-5 bg-surface-container-lowest p-8 md:p-12 whisper-shadow border border-outline-variant">
+                    <h2 class="font-headline-lg text-headline-lg mb-8">Inquiry Form</h2>
+                    <form class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="relative">
+                                <label class="font-label-caps text-[10px] text-outline mb-1 block">FULL NAME</label>
+                                <input
+                                    class="w-full bg-surface-bright border-0 border-b border-outline-variant py-3 form-focus-border font-body-md"
+                                    placeholder="Johnathan Doe" type="text">
+                            </div>
+                            <div class="relative">
+                                <label class="font-label-caps text-[10px] text-outline mb-1 block">EMAIL ADDRESS</label>
+                                <input
+                                    class="w-full bg-surface-bright border-0 border-b border-outline-variant py-3 form-focus-border font-body-md"
+                                    placeholder="j.doe@corporate.com" type="email">
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <label class="font-label-caps text-[10px] text-outline mb-1 block">NATURE OF INQUIRY</label>
+                            <select
+                                class="w-auto min-w-[200px] bg-surface-bright border-0 border-b border-outline-variant py-3 form-focus-border font-body-md cursor-pointer">
+                                <option>Engineering Solutions</option>
+                                <option>Consulting &amp; Strategy</option>
+                                <option>Case Study Request</option>
+                                <option>Partnership Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="relative">
+                            <label class="font-label-caps text-[10px] text-outline mb-1 block">MESSAGE</label>
+                            <textarea
+                                class="w-full bg-surface-bright border-0 border-b border-outline-variant py-3 form-focus-border font-body-md resize-none"
+                                placeholder="Briefly describe your requirements..." rows="4"></textarea>
+                        </div>
+                        <button
+                            class="w-full py-5 bg-primary-container text-white font-bold rounded-lg hover:opacity-95 whisper-shadow transition-all active:scale-[0.98] uppercase tracking-widest text-sm">
+                            Transmit Inquiry
+                        </button>
+                    </form>
+                </div>
+                <!-- Interactive Map / Visual -->
+                <div class="lg:col-span-7 relative group overflow-hidden">
+                    <div class="absolute inset-0 bg-secondary-container animate-pulse z-0"></div>
+                    <img alt="Global Presence Map"
+                        class="w-full h-full object-cover relative z-10 transition-transform duration-700 group-hover:scale-105"
+                        data-alt="A highly detailed and minimalist digital map of a metropolitan financial district, viewed from a top-down architectural perspective. The map uses a monochrome palette of deep charcoals and soft grays, with precise gold lines indicating key transit routes and office locations. The lighting is clean and professional, evoking a sense of global connectivity and high-end corporate presence. The overall style is editorial and architectural."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSSTUETQxVg6FZL34gOL7kbO-GMtSRnTeUuuePT0B0dbsiY5Nx3EOlU11cRY7cESuWsfo05IYnsxybVbPfPWh2Gu9lLgmzReY4yseBQ_FB7phnOqhITb4AGa5WIdpVtKKef5xheLzcltmDqBAium4i4c2d6qXYncnept4B8XwcEwqNgefXqs_7SOf_pf0pzhh8jJltrxAGOMgA5QZbrpD9CGJFCcDrvym7B9X3HmvGrqjkJvIX574F5mqgMx2gmN3OOApi_uuY">
+                    <div
+                        class="absolute bottom-8 left-8 z-20 bg-surface-container-lowest p-6 whisper-shadow border border-outline-variant max-w-sm">
+                        <h3 class="font-headline-md text-headline-md mb-2">Operational Hub</h3>
+                        <p class="font-body-md text-secondary mb-4">Our London headquarters serves as the central node
+                            for global engineering coordination and strategic planning.</p>
+                        <a class="text-primary font-bold flex items-center gap-2 group/link"
+                            href="https://maps.google.com" target="_blank">
+                            Open Map Direction
+                            <span
+                                class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Global Offices -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <h2 class="font-headline-lg text-headline-lg mb-12">Global Offices</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Office 1 -->
+                <div
+                    class="p-8 border border-outline-variant bg-surface-container-lowest hover:border-primary transition-all duration-300 group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span
+                            class="font-label-caps text-label-caps text-outline group-hover:text-primary transition-colors">LONDON,
+                            UK</span>
+                        <span class="material-symbols-outlined text-primary">location_on</span>
+                    </div>
+                    <p class="font-headline-md text-headline-md mb-4">Central Headquarters</p>
+                    <p class="text-secondary mb-6 leading-relaxed">
+                        88 Wood Street, 10th Floor<br>
+                        London EC2V 7RS<br>
+                        United Kingdom
+                    </p>
+                    <div class="pt-6 border-t border-outline-variant">
+                        <p class="text-sm font-bold text-on-surface">+44 (0) 20 7946 0123</p>
+                    </div>
+                </div>
+                <!-- Office 2 -->
+                <div
+                    class="p-8 border border-outline-variant bg-surface-container-lowest hover:border-primary transition-all duration-300 group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span
+                            class="font-label-caps text-label-caps text-outline group-hover:text-primary transition-colors">SINGAPORE</span>
+                        <span class="material-symbols-outlined text-primary">location_on</span>
+                    </div>
+                    <p class="font-headline-md text-headline-md mb-4">APAC Logistics Hub</p>
+                    <p class="text-secondary mb-6 leading-relaxed">
+                        12 Marina Boulevard, MBFC Tower 3<br>
+                        Singapore 018982<br>
+                        Singapore
+                    </p>
+                    <div class="pt-6 border-t border-outline-variant">
+                        <p class="text-sm font-bold text-on-surface">+65 6789 0123</p>
+                    </div>
+                </div>
+                <!-- Office 3 -->
+                <div
+                    class="p-8 border border-outline-variant bg-surface-container-lowest hover:border-primary transition-all duration-300 group">
+                    <div class="flex justify-between items-start mb-6">
+                        <span
+                            class="font-label-caps text-label-caps text-outline group-hover:text-primary transition-colors">MUNICH,
+                            DE</span>
+                        <span class="material-symbols-outlined text-primary">location_on</span>
+                    </div>
+                    <p class="font-headline-md text-headline-md mb-4">Engineering Excellence</p>
+                    <p class="text-secondary mb-6 leading-relaxed">
+                        Maximilianstraße 35A<br>
+                        80539 München<br>
+                        Germany
+                    </p>
+                    <div class="pt-6 border-t border-outline-variant">
+                        <p class="text-sm font-bold text-on-surface">+49 (0) 89 2345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-outline-variant py-section-gap">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="font-display-lg text-headline-md text-primary mb-6">OBT Ltd</div>
+                    <p class="text-on-surface-variant max-w-xs font-body-md">Precision Engineering &amp; Global
+                        Consulting. Driven by technical rigor and architectural mastery.</p>
+                </div>
+                <div>
+                    <h4 class="font-label-caps text-label-caps text-on-surface mb-6">NAVIGATE</h4>
+                    <ul class="space-y-4">
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Solutions</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Industries</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Case Studies</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">About OBT</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-label-caps text-label-caps text-on-surface mb-6">RESOURCES</h4>
+                    <ul class="space-y-4">
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Technical Catalog</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Sustainability Report</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Engineering Insights</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Compliance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-label-caps text-label-caps text-on-surface mb-6">GLOBAL HEADQUARTERS</h4>
+                    <p class="text-on-surface-variant mb-4 font-body-md">
+                        88 Wood Street, 10th Floor<br>
+                        London EC2V 7RS, UK
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:bg-primary-container hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-[20px]">link</span>
+                        </a>
+                        <a class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:bg-primary-container hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-[20px]">share</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-on-surface-variant text-sm">© 2024 OBT Ltd. All rights reserved. Precision Engineering
+                    &amp; Consulting.</p>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a class="text-on-surface-variant hover:text-primary text-sm font-bold transition-colors"
+                        href="#">Privacy Policy</a>
+                    <a class="text-on-surface-variant hover:text-primary text-sm font-bold transition-colors"
+                        href="#">Terms of Service</a>
+                    <a class="text-on-surface-variant hover:text-primary text-sm font-bold transition-colors"
+                        href="#">Compliance</a>
+                    <a class="text-on-surface-variant hover:text-primary text-sm font-bold transition-colors"
+                        href="#">Sustainability</a>
+                    <a class="text-on-surface-variant hover:text-primary text-sm font-bold transition-colors"
+                        href="#">Global Offices</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Simple micro-interactions for the form fields
+        const inputs = document.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.previousElementSibling.style.color = '#735c00';
+            });
+            input.addEventListener('blur', () => {
+                input.previousElementSibling.style.color = '#7f7663';
+            });
+        });
+
+        // Sticky Nav logic - subtle shadow change
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+
+</html>

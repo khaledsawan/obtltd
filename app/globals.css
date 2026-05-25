@@ -2,10 +2,10 @@
 
 @theme inline {
   --color-background: var(--background, #ffffff);
-  --color-surface: var(--surface, #f7f5f0);
+  --color-surface: var(--surface, #ffffff);
   --color-surface-alt: var(--surface-alt, #f1ede4);
   --color-navbar: var(--navbar, #0c0d0f);
-  --color-primary: var(--primary, #b9882d);
+  --color-primary: var(--primary, #d4af37);
   --color-text: var(--text, #111111);
   --color-muted: var(--muted, #6b6b6b);
   --color-border: var(--border, #d7c7a2);
@@ -51,8 +51,14 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid var(--primary, #b9882d);
+  outline: 3px solid var(--primary, #d4af37);
   outline-offset: 2px;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
 }
 
 .text-balance {

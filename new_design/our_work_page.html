@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Metropolis:wght@600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        .whisper-shadow {
+            box-shadow: 0px 10px 30px rgba(26, 26, 26, 0.04);
+        }
+
+        .gold-underline {
+            position: relative;
+        }
+
+        .gold-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+
+        .gold-underline:hover::after {
+            width: 100%;
+        }
+    </style>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { outline: "#7f7663", secondary: "#5f5e5e", "primary-container": "#d4af37", "surface-tint": "#735c00", "on-surface": "#1a1c1c", "error-container": "#ffdad6", "inverse-surface": "#2f3131", "secondary-fixed": "#e5e2e1", "on-tertiary-fixed": "#1b1c1c", "on-primary-fixed": "#241a00", "primary-fixed": "#ffe088", "on-background": "#1a1c1c", "outline-variant": "#d0c5af", "on-secondary-container": "#636262", "surface-container-high": "#e8e8e8", "on-primary": "#ffffff", "on-error-container": "#93000a", tertiary: "#5e5e5e", surface: "#f9f9f9", "on-secondary-fixed": "#1c1b1b", primary: "#735c00", "on-secondary": "#ffffff", "surface-container-low": "#f3f3f3", "on-tertiary": "#ffffff", background: "#f9f9f9", "surface-container": "#eeeeee", "tertiary-fixed-dim": "#c8c6c6", "on-tertiary-fixed-variant": "#474747", "surface-bright": "#f9f9f9", "on-tertiary-container": "#454545", "tertiary-container": "#b4b2b2", "on-error": "#ffffff", "surface-container-highest": "#e2e2e2", "tertiary-fixed": "#e4e2e2", "primary-fixed-dim": "#e9c349", "secondary-container": "#e2dfde", "on-primary-container": "#554300", "inverse-on-surface": "#f1f1f1", "on-surface-variant": "#4d4635", "on-secondary-fixed-variant": "#474746", "inverse-primary": "#e9c349", "surface-variant": "#e2e2e2", "surface-dim": "#dadada", error: "#ba1a1a", "secondary-fixed-dim": "#c8c6c5", "on-primary-fixed-variant": "#574500", "surface-container-lowest": "#ffffff" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "section-gap": "120px", "margin-desktop": "80px", "margin-mobile": "20px", gutter: "24px", base: "8px", "container-max": "1440px" }, fontFamily: { "display-lg": ["Metropolis"], "body-md": ["Manrope"], "label-caps": ["Manrope"], "headline-lg-mobile": ["Metropolis"], "headline-lg": ["Metropolis"], "body-lg": ["Manrope"], "headline-md": ["Metropolis"], headline: ["Metropolis"], display: ["Metropolis"], body: ["Manrope"], label: ["Manrope"] }, fontSize: { "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }], "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }], "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "700" }], "headline-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "600" }], "headline-lg": ["40px", { lineHeight: "1.2", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }] } } } };</script>
+</head>
+
+<body
+    class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <header
+        class="bg-surface dark:bg-surface-container border-b border-outline-variant fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav
+            class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-24 max-w-container-max mx-auto">
+            <div class="flex items-center">
+                <span
+                    class="font-display-lg text-headline-md text-on-surface dark:text-on-surface tracking-tighter uppercase">OBT
+                    Ltd</span>
+            </div>
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-body-md hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300"
+                    href="#">Home</a>
+                <a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-body-md hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300"
+                    href="#">Products</a>
+                <a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-body-md hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300"
+                    href="#">Who We Are</a>
+                <a class="text-primary dark:text-primary-container border-b-2 border-primary-container pb-1 font-bold"
+                    href="#">Our Work</a>
+                <a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-body-md hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300"
+                    href="#">Our Services</a>
+                <a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-body-md hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300"
+                    href="#">Contact Us</a>
+            </div>
+            <div class="hidden lg:flex items-center gap-4">
+                <button
+                    class="bg-primary-container text-on-primary px-8 py-3 rounded-lg font-label-caps text-label-caps tracking-widest scale-100 active:scale-95 transition-transform duration-200">Download
+                    Catalog</button>
+            </div>
+            <!-- Mobile Toggle -->
+            <button class="md:hidden text-on-surface">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative bg-surface py-section-gap overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none">
+                <div class="w-full h-full border-l border-outline transform -skew-x-12"></div>
+            </div>
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center md:text-left">
+                <div
+                    class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps mb-6">
+                    PORTFOLIO</div>
+                <h1
+                    class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface max-w-4xl mb-8 leading-tight">
+                    Engineering Excellence <br> <span class="text-primary-container">in Motion</span>
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Explore our track record of precision and technical authority. From structural masterpieces to
+                    advanced industrial automation, OBT Ltd delivers engineered solutions that redefine efficiency and
+                    aesthetic rigor.
+                </p>
+                <div class="mt-12 w-24 h-1 bg-primary-container"></div>
+            </div>
+        </section>
+        <!-- Projects List -->
+        <section class="bg-background">
+            <!-- Project 1 -->
+            <div class="py-section-gap border-b border-outline-variant">
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                    <div class="flex flex-col md:flex-row items-center gap-gutter md:gap-24">
+                        <div class="w-full md:w-3/5 group overflow-hidden whisper-shadow border border-outline-variant">
+                            <img alt="Industrial Architecture"
+                                class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida/ADBb0uiKvn3YBGZ1p2LlHhEvYpKfjjDR0FiWmgv8J-XXPzOVpiikKmG-1lrJ9CA4MmnP7xUK8FAzOPNTlXm_oRUMkaLoun456ou3vOcTYSjigi8M48_8R7vXiATBljqsptzh5--6uzejSvCPvFx8RE7VONc6h57FRGIMyl8_jLnbCCFgLbxCk2T6Opc850mLyp3OEm7L2M4Df1a2IDDBGt4G6BpTa1-v1Miph09NSCGdfJ1dCmFWtEktzbmT">
+                        </div>
+                        <div class="w-full md:w-2/5">
+                            <span class="font-label-caps text-label-caps text-primary-container mb-4 block">FACADE
+                                ENGINEERING</span>
+                            <h2 class="font-display-lg text-headline-lg text-on-surface mb-6">The Meridian Facade</h2>
+                            <p class="font-body-md text-on-surface-variant mb-8">
+                                A high-performance structural glass envelope designed for a flagship corporate
+                                headquarters. This project required bespoke steel connections and thermal modeling to
+                                achieve seamless transparency while maintaining strict energy efficiency standards.
+                            </p>
+                            <a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-on-surface gold-underline group"
+                                href="#">
+                                View Case Study
+                                <span
+                                    class="material-symbols-outlined text-primary-container transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="py-section-gap border-b border-outline-variant bg-surface-container-lowest">
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-gutter md:gap-24">
+                        <div class="w-full md:w-3/5 group overflow-hidden whisper-shadow border border-outline-variant">
+                            <img alt="Manufacturing Automation"
+                                class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida/ADBb0uhbh02Z7boVaOVfnZHjaZCrvV1IBMXgx_0dRcMNfV2OgAueuA09a0PC9rri1fpbC56WCl-ThqNLtd1s-IzUhyvtvCXt2P2UBuACp0b2MZ-aBR-NG_4SvLKKInXdISZH5f0wWdJJW7-sUD9iXFkTZ6b1w0o3rGuldhJz0jBbfQ1xA43_MsikVw0ZxE0C8lC7DR6zFSegiTq5uSTA8HQIFQ0YCWfn_YFBxxDFEtvE1xzzAn9i9gMZGfMG">
+                        </div>
+                        <div class="w-full md:w-2/5">
+                            <span class="font-label-caps text-label-caps text-primary-container mb-4 block">AUTOMATION
+                                &amp; SYSTEMS</span>
+                            <h2 class="font-display-lg text-headline-lg text-on-surface mb-6">Project: Alpha Automate
+                            </h2>
+                            <p class="font-body-md text-on-surface-variant mb-8">
+                                Redesigning the core assembly line for a leading semiconductor manufacturer. By
+                                integrating precision robotics and real-time telemetry, OBT Ltd achieved a 22% increase
+                                in throughput while reducing waste by nearly double digits.
+                            </p>
+                            <a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-on-surface gold-underline group"
+                                href="#">
+                                View Case Study
+                                <span
+                                    class="material-symbols-outlined text-primary-container transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="py-section-gap">
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                    <div class="flex flex-col md:flex-row items-center gap-gutter md:gap-24">
+                        <div
+                            class="w-full md:w-3/5 group overflow-hidden whisper-shadow border border-outline-variant relative">
+                            <div
+                                class="absolute inset-0 bg-primary opacity-10 mix-blend-overlay group-hover:opacity-0 transition-opacity">
+                            </div>
+                            <div class="aspect-[1.5/1] bg-surface-container-high relative overflow-hidden">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="w-full h-full bg-cover bg-center"
+                                        data-alt="A detailed close-up of heavy industrial turbine components, showcasing intricate metal textures and precision machining. The lighting is dramatic, coming from the side to emphasize the clean, geometric lines and the heavy-duty industrial aesthetic. The palette is dominated by cool metallic greys and deep blacks, reflecting the brand's precision and authority in engineering."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-TYyyQ1Vz1yoVowVVANiNsKS5R2E5EdXZO156KycWdE9wxwofm6jqrZLC2vDIXPa_-XnZR27y_ksP8ZZjGDnWvjAsauJ85S2Ym6iErGPuwkvbwB3cJ5rwZdH6qqAua4pY8aI5mNiabDuqOZxhuPsn7ILFvEHRSti8TWst2-6V6Ql6PtPxJb5J9rDT1VQPQCCeMBn0HHrXECfyfewzOLcI-BNWELaJ03CyXeolegG6rkks2xADFEGiDIIloCUutgvCE6DaAO97')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/5">
+                            <span class="font-label-caps text-label-caps text-primary-container mb-4 block">TURBINE
+                                TECHNOLOGY</span>
+                            <h2 class="font-display-lg text-headline-lg text-on-surface mb-6">Turbine Dynamics
+                                Re-engineered</h2>
+                            <p class="font-body-md text-on-surface-variant mb-8">
+                                A specialized consultancy engagement focusing on the vibrational analysis and corrective
+                                balancing of large-scale hydro turbines. Our team developed custom damping solutions
+                                that extended the operational lifecycle by a projected fifteen years.
+                            </p>
+                            <a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-on-surface gold-underline group"
+                                href="#">
+                                View Case Study
+                                <span
+                                    class="material-symbols-outlined text-primary-container transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="bg-on-surface text-on-primary py-section-gap">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+                <h3 class="font-display-lg text-headline-lg mb-8">Have a Complex Project?</h3>
+                <p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl mx-auto mb-12">
+                    Our engineering consultants are ready to bring technical precision and industrial foresight to your
+                    next venture.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                    <button
+                        class="bg-primary-container text-on-primary px-10 py-4 rounded-lg font-label-caps text-label-caps tracking-widest hover:brightness-110 transition-all">WhatsApp
+                        Contact</button>
+                    <button
+                        class="border border-surface-variant text-surface-variant px-10 py-4 rounded-lg font-label-caps text-label-caps tracking-widest hover:bg-surface-variant hover:text-on-surface transition-all">Send
+                        Inquiry</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface dark:bg-surface-container-high border-t border-outline-variant">
+        <div
+            class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+            <div class="col-span-1 md:col-span-1">
+                <span
+                    class="font-display-lg text-headline-md text-on-surface dark:text-on-surface tracking-tighter mb-6 block">OBT
+                    Ltd</span>
+                <p class="font-body-md text-on-surface-variant mb-8">Precision Engineering &amp; Industrial Consulting
+                    for the modern age.</p>
+            </div>
+            <div class="col-span-1">
+                <h4 class="font-label-caps text-label-caps text-primary-container mb-6">NAVIGATION</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary-container transition-colors"
+                            href="#">Products</a></li>
+                    <li><a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary-container transition-colors"
+                            href="#">Who We Are</a></li>
+                    <li><a class="text-primary-container font-bold" href="#">Our Work</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h4 class="font-label-caps text-label-caps text-primary-container mb-6">RESOURCES</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary-container transition-colors"
+                            href="#">Our Services</a></li>
+                    <li><a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary-container transition-colors"
+                            href="#">Contact Us</a></li>
+                    <li><a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary-container transition-colors"
+                            href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h4 class="font-label-caps text-label-caps text-primary-container mb-6">OFFICE</h4>
+                <p class="font-body-md text-on-surface-variant">
+                    124 Industrial Way,<br>
+                    Engineering District,<br>
+                    Precision City, PC 5402
+                </p>
+            </div>
+        </div>
+        <div
+            class="border-t border-outline-variant px-margin-mobile md:px-margin-desktop py-8 max-w-container-max mx-auto flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-on-surface-variant opacity-60">
+            <span>© 2024 OBT Ltd. Precision Engineering &amp; Industrial Consulting. All rights reserved.</span>
+            <div class="flex gap-4">
+                <span class="material-symbols-outlined text-[16px]">language</span>
+                <span>GLOBAL OPS</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Subtle interaction for header scroll
+        window.onscroll = function () {
+            const header = document.querySelector('header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('py-2', 'whisper-shadow');
+                header.classList.remove('h-24');
+                header.classList.add('h-20');
+            } else {
+                header.classList.remove('py-2', 'whisper-shadow');
+                header.classList.remove('h-20');
+                header.classList.add('h-24');
+            }
+        };
+
+        // Scroll reveal logic
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.py-section-gap').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>

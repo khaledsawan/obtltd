@@ -8,12 +8,12 @@
   "ui": {
     "theme": {
       "colors": {
-        "background": "#ffffff",
-        "surface": "#f7f5f0",
+        "background": "#f9f9f9",
+        "surface": "#ffffff",
         "surfaceAlt": "#f1ede4",
         "navbar": "#0c0d0f",
-        "primary": "#b9882d",
-        "text": "#111111",
+        "primary": "#d4af37",
+        "text": "#0c0d0f",
         "muted": "#6b6b6b",
         "border": "#d7c7a2",
         "accentSoft": "#efe4c9"
@@ -79,29 +79,62 @@
     "main": [
       {
         "href": "/",
-        "label": "الرئيسية"
+        "label": {
+          "ar": "الرئيسية",
+          "en": "Home"
+        }
       },
       {
         "href": "/products",
-        "label": "المنتجات"
+        "label": {
+          "ar": "المنتجات",
+          "en": "Products"
+        }
       },
       {
         "href": "/who-we-are",
-        "label": "من نحن"
+        "label": {
+          "ar": "من نحن",
+          "en": "Who We Are"
+        }
       },
       {
         "href": "/our-work",
-        "label": "أعمالنا"
-      },
-      {
-        "href": "/services",
-        "label": "الخدمات"
+        "label": {
+          "ar": "أعمالنا",
+          "en": "Our Work"
+        }
       },
       {
         "href": "/contact",
-        "label": "اتصل بنا"
+        "label": {
+          "ar": "اتصل بنا",
+          "en": "Contact"
+        }
       }
-    ]
+    ],
+    "actions": {
+      "whatsapp": {
+        "label": {
+          "ar": "تواصل واتساب",
+          "en": "WhatsApp Contact"
+        },
+        "href": {
+          "ar": "https://wa.me/963960708022",
+          "en": "https://wa.me/963960708022"
+        }
+      },
+      "catalog": {
+        "label": {
+          "ar": "تحميل الكتالوج",
+          "en": "Download Catalog"
+        },
+        "href": {
+          "ar": "/catalog.pdf",
+          "en": "/catalog.pdf"
+        }
+      }
+    }
   },
   "company": {
     "name": "OBT Ltd",
@@ -170,335 +203,85 @@
       "whatsapp": "+963960708022"
     }
   },
-  "products": {
-    "featuredSlugs": [
-      "bedroom-sliding-systems",
-      "laser-machines",
-      "cnc-machines",
-      "industrial-rubber",
-      "woodworking-supplies",
-      "production-accessories"
-    ],
-    "categories": [
-      "ماكينات",
-      "أنظمة تشغيل",
-      "خامات وتجهيزات",
-      "ملحقات إنتاج"
-    ],
-    "relatedBySlug": {
-      "bedroom-sliding-systems": [
-        "woodworking-supplies",
-        "production-accessories"
-      ],
-      "laser-machines": [
-        "cnc-machines",
-        "production-accessories"
-      ],
-      "cnc-machines": [
-        "laser-machines",
-        "woodworking-supplies"
-      ],
-      "industrial-rubber": [
-        "production-accessories",
-        "woodworking-supplies"
-      ],
-      "woodworking-supplies": [
-        "bedroom-sliding-systems",
-        "cnc-machines"
-      ],
-      "production-accessories": [
-        "industrial-rubber",
-        "laser-machines"
-      ]
-    },
-    "list": [
-      {
-        "slug": "bedroom-sliding-systems",
-        "title": "أنظمة سحب غرف النوم",
-        "category": "أنظمة تشغيل",
-        "description": "أنظمة سحب عملية وهادئة مصممة لتمنح الأثاث حركة مستقرة وعمر استخدام طويل.",
-        "summary": "حلول سحب متينة تناسب التطبيقات المنزلية والتجارية الراقية.",
-        "images": [
-          {
-            "src": "/assets/products/sliding-system.svg",
-            "alt": "أنظمة سحب غرف النوم"
-          }
-        ],
-        "features": [
-          "حركة انسيابية وثبات أثناء التشغيل",
-          "خيارات متعددة للمقاسات والتطبيقات",
-          "تحمل مناسب للاستخدام المتكرر"
-        ],
-        "uses": [
-          "غرف النوم",
-          "الخزائن الحديثة",
-          "المشاريع السكنية"
-        ],
-        "specifications": [
-          "تصميم مخصص للمسارات المنزلقة",
-          "ملاءمة للتجهيزات الخشبية الحديثة",
-          "سهولة في التركيب والصيانة"
-        ],
-        "seo": {
-          "title": "أنظمة سحب غرف النوم",
-          "description": "حلول سحب متينة وانسيابية لتجهيزات غرف النوم والخزائن بتشغيل ثابت ومظهر احترافي."
-        }
-      },
-      {
-        "slug": "laser-machines",
-        "title": "ماكينات الليزر",
-        "category": "ماكينات",
-        "description": "ماكينات ليزر للقص والحفر بدقة عالية، مناسبة لخطوط الإنتاج التي تحتاج إلى جودة تنفيذ وسرعة عمل.",
-        "summary": "دقة تشغيل عالية لتطبيقات الخشب والأكريليك والجلود والخامات المتنوعة.",
-        "images": [
-          {
-            "src": "/assets/products/laser-machine.svg",
-            "alt": "ماكينات ليزر صناعية"
-          }
-        ],
-        "features": [
-          "دقة قص وحفر عالية",
-          "أداء مناسب للتشغيل المتواصل",
-          "اعتمادية في الأعمال المتكررة"
-        ],
-        "uses": [
-          "الأخشاب",
-          "الأكريليك",
-          "الجلود",
-          "الخامات الدعائية"
-        ],
-        "specifications": [
-          "حلول مناسبة للقص والحفر",
-          "جاهزية لورش الإنتاج والتصنيع",
-          "خيارات تلائم أحجام عمل متنوعة"
-        ],
-        "seo": {
-          "title": "ماكينات الليزر",
-          "description": "ماكينات ليزر صناعية للقص والحفر بدقة وجودة تشغيل تدعم متطلبات الإنتاج الاحترافي."
-        }
-      },
-      {
-        "slug": "cnc-machines",
-        "title": "ماكينات CNC",
-        "category": "ماكينات",
-        "description": "أنظمة CNC دقيقة للتقطيع والتشكيل، مناسبة للتطبيقات التي تتطلب ثباتاً في القياس وسرعة في الإنجاز.",
-        "summary": "حلول تصنيع دقيقة تدعم أعمال الخشب والمواد الهندسية والتطبيقات المتخصصة.",
-        "images": [
-          {
-            "src": "/assets/products/cnc-machine.svg",
-            "alt": "ماكينات CNC"
-          }
-        ],
-        "features": [
-          "دقة تشغيل عالية",
-          "مرونة في الأحجام والقدرات",
-          "جاهزية للعمل في البيئات الصناعية"
-        ],
-        "uses": [
-          "الأخشاب",
-          "المواد المركبة",
-          "أعمال الحفر والتشكيل"
-        ],
-        "specifications": [
-          "حلول موجهة للإنتاج المتكرر",
-          "ثبات في الأداء على مدى التشغيل",
-          "إمكانية مواءمة حسب التطبيق"
-        ],
-        "seo": {
-          "title": "ماكينات CNC",
-          "description": "ماكينات CNC دقيقة وموثوقة للتقطيع والحفر والتشكيل في البيئات الصناعية الحديثة."
-        }
-      },
-      {
-        "slug": "industrial-rubber",
-        "title": "المطاط الصناعي",
-        "category": "خامات وتجهيزات",
-        "description": "خامات مطاط صناعي متعددة الاستخدامات لتطبيقات العزل والحماية والدعم التشغيلي داخل خطوط الإنتاج.",
-        "summary": "حلول مطاطية عملية تدعم التشغيل والحماية والاستخدامات الصناعية المساندة.",
-        "images": [
-          {
-            "src": "/assets/products/industrial-rubber.svg",
-            "alt": "خامات مطاط صناعي"
-          }
-        ],
-        "features": [
-          "خيارات متعددة للتطبيقات المختلفة",
-          "مناسبة لبيئات العمل الصناعية",
-          "تعزز الحماية والعزل والاعتمادية"
-        ],
-        "uses": [
-          "العزل",
-          "الدعم التشغيلي",
-          "الحماية الصناعية"
-        ],
-        "specifications": [
-          "ملاءمة للتطبيقات الفنية المساندة",
-          "قابلية للتوريد بحسب الحاجة",
-          "خيارات تناسب أكثر من قطاع"
-        ],
-        "seo": {
-          "title": "المطاط الصناعي",
-          "description": "توريد خامات مطاط صناعي لتطبيقات الحماية والعزل والدعم التشغيلي في البيئات الصناعية."
-        }
-      },
-      {
-        "slug": "woodworking-supplies",
-        "title": "مستلزمات الأخشاب",
-        "category": "خامات وتجهيزات",
-        "description": "تجهيزات ومواد مساندة لورش النجارة والإنتاج الخشبي تركز على الجودة العملية وسهولة التوريد.",
-        "summary": "مواد وتجهيزات موجهة لدعم الإنتاج الخشبي اليومي بشكل ثابت واحترافي.",
-        "images": [
-          {
-            "src": "/assets/products/woodworking-supplies.svg",
-            "alt": "مستلزمات الأخشاب"
-          }
-        ],
-        "features": [
-          "خيارات مناسبة لورش الإنتاج",
-          "جاهزية لتطبيقات النجارة المتنوعة",
-          "تحسين انسيابية العمل اليومي"
-        ],
-        "uses": [
-          "ورش النجارة",
-          "التجهيزات الداخلية",
-          "الأثاث الخشبي"
-        ],
-        "specifications": [
-          "مواد مساندة للعمل الخشبي",
-          "حلول عملية للتوريد المتكرر",
-          "ملاءمة لاحتياجات المشاريع المختلفة"
-        ],
-        "seo": {
-          "title": "مستلزمات الأخشاب",
-          "description": "توريد مستلزمات وخامات داعمة لورش النجارة والإنتاج الخشبي بجودة عملية واعتمادية عالية."
-        }
-      },
-      {
-        "slug": "production-accessories",
-        "title": "ملحقات الإنتاج",
-        "category": "ملحقات إنتاج",
-        "description": "مجموعة ملحقات وتجهيزات داعمة ترفع كفاءة التشغيل وتساعد على استقرار الأداء داخل بيئات العمل الصناعية.",
-        "summary": "ملحقات مساندة تعزز استمرارية العمل وجودة التنفيذ اليومي.",
-        "images": [
-          {
-            "src": "/assets/products/production-accessories.svg",
-            "alt": "ملحقات إنتاج صناعية"
-          }
-        ],
-        "features": [
-          "تكامل مع احتياجات التشغيل اليومية",
-          "مرونة في الاستخدام داخل الورش والمصانع",
-          "دعم عملي لخطوط الإنتاج"
-        ],
-        "uses": [
-          "المصانع",
-          "ورش التصنيع",
-          "التجهيزات المساندة"
-        ],
-        "specifications": [
-          "خيارات داعمة للأداء اليومي",
-          "حلول قابلة للمواءمة حسب التطبيق",
-          "توريد موجه لاحتياجات العمل المتخصص"
-        ],
-        "seo": {
-          "title": "ملحقات الإنتاج",
-          "description": "ملحقات وتجهيزات إنتاج تساعد على رفع الكفاءة التشغيلية وتحسين استقرار الأداء الصناعي."
-        }
-      }
-    ]
-  },
-  "services": {
-    "list": [
-      {
-        "slug": "industrial-machinery-supply",
-        "title": "توريد المعدات الصناعية",
-        "description": "توريد منظم للمعدات والأنظمة الصناعية بما يتناسب مع احتياجات التشغيل وطبيعة النشاط.",
-        "image": {
-          "src": "/assets/services/machinery-supply.svg",
-          "alt": "خدمة توريد المعدات الصناعية"
-        }
-      },
-      {
-        "slug": "woodworking-materials",
-        "title": "توريد مستلزمات الأخشاب",
-        "description": "توفير المواد والتجهيزات الداعمة لأعمال النجارة والتجهيزات الداخلية والإنتاج الخشبي.",
-        "image": {
-          "src": "/assets/services/woodworking-materials.svg",
-          "alt": "خدمة توريد مستلزمات الأخشاب"
-        }
-      },
-      {
-        "slug": "technical-support",
-        "title": "الدعم الفني والمتابعة",
-        "description": "مساندة عملية في اختيار الحل المناسب، مع متابعة تساعد العميل على تحقيق أفضل استفادة تشغيلية.",
-        "image": {
-          "src": "/assets/services/technical-support.svg",
-          "alt": "خدمة الدعم الفني والمتابعة"
-        }
-      }
-    ]
-  },
-  "work": {
-    "items": [
-      {
-        "slug": "factory-preparation",
-        "title": "تجهيز خطوط إنتاج جديدة",
-        "description": "مساهمة في اختيار التجهيزات والمنتجات المناسبة لتشغيل بيئات إنتاج حديثة بكفاءة أعلى.",
-        "image": {
-          "src": "/assets/work/factory-preparation.svg",
-          "alt": "تجهيز خطوط إنتاج جديدة"
-        }
-      },
-      {
-        "slug": "commercial-fit-out",
-        "title": "دعم مشاريع تجارية متخصصة",
-        "description": "حلول توريد تساعد المشاريع التجارية على تجهيز المساحات والورش والأنظمة المساندة.",
-        "image": {
-          "src": "/assets/work/commercial-fit-out.svg",
-          "alt": "دعم مشاريع تجارية متخصصة"
-        }
-      },
-      {
-        "slug": "partner-supply-chain",
-        "title": "شراكات توريد مستمرة",
-        "description": "بناء علاقة توريد طويلة الأمد مع العملاء الذين يحتاجون إلى جاهزية واستقرار في الإمداد.",
-        "image": {
-          "src": "/assets/work/partner-supply-chain.svg",
-          "alt": "شراكات توريد مستمرة"
-        }
-      },
-      {
-        "slug": "industrial-upgrade",
-        "title": "تحديث بيئات تشغيل قائمة",
-        "description": "إضافة حلول ومستلزمات جديدة لتحسين الإنتاجية والاعتمادية في الأعمال القائمة.",
-        "image": {
-          "src": "/assets/work/industrial-upgrade.svg",
-          "alt": "تحديث بيئات تشغيل صناعية"
-        }
-      }
-    ]
-  },
   "footer": {
-    "summary": "شريك موثوق للحلول الصناعية والتجارية التي تركز على الجودة وسرعة الاستجابة واستمرارية التشغيل.",
+    "summary": {
+      "ar": "نقود معايير الدقة الهندسية والحلول الصناعية عالية الأداء لبيئات التصنيع الحديثة.",
+      "en": "Leading the standard in precision engineering and high-performance industrial solutions."
+    },
+    "quickLinksTitle": {
+      "ar": "التنقل",
+      "en": "Navigation"
+    },
+    "contactTitle": {
+      "ar": "تواصل معنا",
+      "en": "Contact Us"
+    },
     "quickLinks": [
       {
-        "href": "/",
-        "label": "الرئيسية"
+        "label": {
+          "ar": "سياسة الخصوصية",
+          "en": "Privacy Policy"
+        },
+        "href": "#"
       },
       {
-        "href": "/products",
-        "label": "المنتجات"
+        "label": {
+          "ar": "شروط الاستخدام",
+          "en": "Terms of Service"
+        },
+        "href": "#"
       },
       {
-        "href": "/services",
-        "label": "الخدمات"
+        "label": {
+          "ar": "سياسة ملفات الارتباط",
+          "en": "Cookie Policy"
+        },
+        "href": "#"
       },
       {
-        "href": "/contact",
-        "label": "اتصل بنا"
+        "label": {
+          "ar": "مكاتبنا",
+          "en": "Global Offices"
+        },
+        "href": "#"
       }
     ],
-    "legal": "جميع الحقوق محفوظة لـ OBT Ltd"
+    "contacts": [
+      {
+        "icon": "mail",
+        "value": {
+          "ar": "info@obt-precision.com",
+          "en": "info@obt-precision.com"
+        },
+        "href": "mailto:info@obt-precision.com"
+      },
+      {
+        "icon": "location_on",
+        "value": {
+          "ar": "المنطقة الصناعية 4، تكنوبارك، جناح 402",
+          "en": "Industrial Zone 4, Technopark, Suite 402"
+        },
+        "href": "#"
+      }
+    ],
+    "legal": {
+      "ar": "© 2024 OBT Ltd. التميز الهندسي الصناعي.",
+      "en": "© 2024 OBT Ltd. Precision Engineering & Industrial Excellence."
+    },
+    "social": [
+      {
+        "icon": "public",
+        "href": "#"
+      },
+      {
+        "icon": "groups",
+        "href": "#"
+      },
+      {
+        "icon": "corporate_fare",
+        "href": "#"
+      }
+    ]
   },
   "pages": {
     "shared": {
@@ -516,81 +299,369 @@
         }
       }
     },
-    "home": {
-      "seo": {
-        "title": "الرئيسية",
-        "description": "الصفحة الرئيسية لشركة OBT Ltd المتخصصة في الحلول الصناعية والتجارية والمنتجات الداعمة للإنتاج."
-      },
-      "hero": {
-        "eyebrow": "حلول صناعية عملية",
-        "title": "توريد وتجهيزات صناعية وتجارية تدعم الإنتاج بثقة.",
-        "description": "نقدم منتجات وحلولاً مدروسة للمصانع وورش الإنتاج، مع تركيز على الجودة العملية، التوريد الموثوق، والدعم المستمر.",
-        "primary": {
-          "label": "استعراض المنتجات",
-          "href": "/products"
+    "whoweare": {
+      "v2": {
+        "hero": {
+          "eyebrow": {
+            "en": "Established 1984",
+            "ar": "منذ 1984"
+          },
+          "title": {
+            "en": "Engineering Legacy. Global Vision.",
+            "ar": "إرث هندسي. رؤية عالمية."
+          },
+          "description": {
+            "en": "Pioneering the intersection of mechanical rigor and sophisticated corporate strategy for over four decades. We don't just build infrastructure; we engineer certainty.",
+            "ar": "نقود التكامل بين الدقة الهندسية والاستراتيجية المؤسسية لأكثر من أربعة عقود. نحن لا نبني البنية التحتية فحسب، بل نصنع اليقين الهندسي."
+          },
+          "image": {
+            "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDw8PGQ6WUdrpMIUQnL0hyzKY7ho5wa39cJALh3zDf3O-wAf76TQ7z2ZBIh44rT2zkTXp6RCwaru9CupvpqReALnaqwKsESk7_v5SFBoGFr6L_IWVRBhtb7mqS5LR8-0KpN_n9bDWzU0fA6xNBX2bn8aDo9T6NgFe49pB1jQZ-akkl_JSPK1FNyW9KFScYjr94WOQSDHRXIXWclMnsafx1zcn_fMZz5IF6xXn3u6Db4RdvbWt-OO7an3-b97DhwPUNiK1Bfbsq0",
+            "alt": {
+              "en": "Hero Architectural Image",
+              "ar": "صورة معمارية رئيسية"
+            }
+          }
         },
-        "secondary": {
-          "label": "تعرف علينا",
-          "href": "/who-we-are"
+        "mission": {
+          "eyebrow": {
+            "en": "Our Mission",
+            "ar": "مهمتنا"
+          },
+          "title": {
+            "en": "Our Commitment to Precision",
+            "ar": "التزامنا بالدقة"
+          },
+          "description": {
+            "en": "At OBT Ltd, precision is not a metric; it is our ethos. We deliver technical rigor that transforms complex industrial challenges into seamless global operations.",
+            "ar": "في OBT، الدقة ليست مجرد مقياس، بل هي جوهر عملنا. نقدم صرامة هندسية تحول التحديات الصناعية المعقدة إلى عمليات عالمية سلسة."
+          },
+          "cards": [
+            {
+              "type": "image",
+              "title": {
+                "en": "Technical Rigor",
+                "ar": "الصرامة التقنية"
+              },
+              "description": {
+                "en": "Utilizing advanced computational modeling and legacy engineering wisdom to ensure every project exceeds safety and performance standards.",
+                "ar": "استخدام النمذجة المتقدمة والخبرة الهندسية لضمان تجاوز كل مشروع لمعايير السلامة والأداء."
+              },
+              "image": {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuB6VdRAyElb4coMok0-jybrQOd826-QOs9ah9Qv9n_tWTkjWlmH0iky6xpdsDvhsw46nUvqnFLoKSTjHvD1D-dtX3DkHmmmZktlXwakZ6f96Qo_AZLrw2v42pE51QvE5fDQT2K5IXpY2_wAtMo5cEXLm-JuWQAqByE-LFYt4gpQzI6k_OaUb2HNmdXIX4gVUkzP62FvxvwFqbkl0j7w1P6qiB5lK8w7l0E0UpbxrH09TN6dOA7j_DMoHUkpiGBbAYchrdGkoO-I",
+                "alt": {
+                  "en": "Technical Rigor",
+                  "ar": "الصرامة التقنية"
+                }
+              }
+            },
+            {
+              "type": "stat",
+              "value": "99.9%",
+              "label": {
+                "en": "Accuracy Rating",
+                "ar": "معدل الدقة"
+              },
+              "title": {
+                "en": "Discreet Authority",
+                "ar": "الخبرة الموثوقة"
+              },
+              "description": {
+                "en": "Providing high-level consultancy for confidential infrastructure projects worldwide.",
+                "ar": "تقديم استشارات متقدمة للمشاريع الاستراتيجية والبنية التحتية حول العالم."
+              }
+            },
+            {
+              "type": "link",
+              "title": {
+                "en": "Discreet Authority",
+                "ar": "الخبرة الموثوقة"
+              },
+              "description": {
+                "en": "Providing high-level consultancy for confidential infrastructure projects worldwide.",
+                "ar": "تقديم استشارات متقدمة للمشاريع الاستراتيجية والبنية التحتية حول العالم."
+              },
+              "cta": {
+                "label": {
+                  "en": "Contact Us",
+                  "ar": "تواصل معنا"
+                },
+                "href": "/contact-us"
+              }
+            },
+            {
+              "type": "banner",
+              "title": {
+                "en": "Future-Proofing Infrastructure",
+                "ar": "تهيئة البنية التحتية للمستقبل"
+              },
+              "description": {
+                "en": "Integrating IoT and AI into legacy mechanical systems.",
+                "ar": "دمج إنترنت الأشياء والذكاء الاصطناعي في الأنظمة الهندسية التقليدية."
+              },
+              "image": {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA6Vnzmre_kLTcF_rAxBtqnZXJVDdkJOeDpQZXzq632XVaBTV591u7PQGymFyAtmF09_LcR1X_kx-4aRbsYNuZdVD_Wza2rWnvSI9439fTH56I9TSFl8tQN4_OoiaZdA9gP25ZUM59gwt9c0pLU73NoVIX34krJg8kfG9i56PhfTHYBMXECJHzjLu9t4C5bF2zATjeQZMAVccE-V4eVSulhuDUHRzjXCmBSJM6NSLCYvmlwHHCFI849KM3kwRo5dg_zIYps16Q3",
+                "alt": {
+                  "en": "Future Infrastructure",
+                  "ar": "البنية التحتية المستقبلية"
+                }
+              }
+            }
+          ]
         },
-        "media": {
-          "src": "/assets/hero/02_main_cnc_machine.png",
-          "alt": "مشهد صناعي يعبر عن خدمات OBT Ltd"
+        "leadership": {
+          "eyebrow": {
+            "en": "Executive Team",
+            "ar": "الفريق التنفيذي"
+          },
+          "title": {
+            "en": "Guiding the Front Line of Innovation",
+            "ar": "قيادة الصف الأول للابتكار"
+          },
+          "members": [
+            {
+              "name": "Marcus Thorne",
+              "position": {
+                "en": "Chief Executive Officer",
+                "ar": "الرئيس التنفيذي"
+              },
+              "bio": {
+                "en": "30+ years in structural engineering and global logistics management.",
+                "ar": "أكثر من 30 عاماً من الخبرة في الهندسة الإنشائية وإدارة الخدمات اللوجستية العالمية."
+              },
+              "image": {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAvZdY1XjlEbdWqkAoUrUf_8uEjKOBge9_rVrKOzmRd0pBVztYLsF9f_lNdsBeKcG8PdKruFV3DhNgbGBe_v4mWYUCtRYDAA-jt1W_hTrxqcFaaZqFyDP1XPUOZpJGq3MkZvq32qkHd3hMM6M23oA2MgyVN_bMc2EY_G__RXHidPI1qAitdybjCs1JCyotgplh4Zirmf_3cZavWrkVIdjnrUG7UUU6uofne7yVwkodpjcaE3IOqDViRJijxCjICJ5Y7ysTlN1K7"
+              }
+            }
+          ]
         },
-        "highlights": [
-          "حلول موجهة للتشغيل اليومي",
-          "منتجات مختارة بعناية",
-          "شراكات توريد طويلة الأمد"
-        ]
-      },
-      "intro": {
-        "title": "خبرة عملية تلائم احتياجات السوق",
-        "description": "نعمل على اختيار المنتجات والخدمات التي تخدم بيئات الإنتاج والتجهيز التجاري بشكل مباشر، مع فهم دقيق لأولويات العميل التشغيلية."
-      },
-      "whyChooseUs": {
-        "title": "لماذا يختارنا العملاء",
-        "description": "نركز على توفير حلول عملية، واضحة، وقابلة للتنفيذ بما يحقق قيمة تشغيلية حقيقية."
-      },
-      "servicesPreview": {
-        "title": "خدماتنا",
-        "description": "خدمات مصممة لتسهيل الاختيار والتوريد والمتابعة الفنية."
-      },
-      "workPreview": {
-        "title": "أعمالنا وشركاؤنا",
-        "description": "أمثلة على المساحات التي ندعمها من خلال التوريد والحلول الصناعية."
-      }
-    },
-    "products": {
-      "seo": {
-        "title": "المنتجات",
-        "description": "استعرض مجموعة منتجات OBT Ltd من الماكينات والمستلزمات الصناعية والتجهيزات الداعمة للإنتاج."
-      },
-      "hero": {
-        "eyebrow": "كتالوج المنتجات",
-        "title": "منتجات صناعية وتجارية مبنية على الكفاءة والاعتمادية.",
-        "description": "مجموعة مختارة بعناية من المنتجات التي تخدم بيئات العمل الصناعية والتجارية وتدعم جودة التشغيل."
-      }
-    },
-    "about": {
-      "seo": {
-        "title": "من نحن",
-        "description": "تعرف على OBT Ltd ورؤيتها ورسالتها والقيم التي توجه عملها في قطاع الحلول الصناعية والتجارية."
-      },
-      "hero": {
-        "eyebrow": "هوية الشركة",
-        "title": "شريك يربط بين الحلول الصناعية والاحتياج العملي الفعلي.",
-        "description": "نقدم خبرة ميدانية وفهماً تشغيلياً يساعد العملاء على اتخاذ قرارات أكثر وضوحاً وثباتاً."
+        "footprint": {
+          "eyebrow": {
+            "en": "Global Footprint",
+            "ar": "الحضور العالمي"
+          },
+          "title": {
+            "en": "Reach Without Boundaries.",
+            "ar": "وصول بلا حدود."
+          },
+          "image": {
+            "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAvZdY1XjlEbdWqkAoUrUf_8uEjKOBge9_rVrKOzmRd0pBVztYLsF9f_lNdsBeKcG8PdKruFV3DhNgbGBe_v4mWYUCtRYDAA-jt1W_hTrxqcFaaZqFyDP1XPUOZpJGq3MkZvq32qkHd3hMM6M23oA2MgyVN_bMc2EY_G__RXHidPI1qAitdybjCs1JCyotgplh4Zirmf_3cZavWrkVIdjnrUG7UUU6uofne7yVwkodpjcaE3IOqDViRJijxCjICJ5Y7ysTlN1K7"
+          },
+          "locations": [
+            {
+              "city": {
+                "en": "London",
+                "ar": "لندن"
+              },
+              "description": {
+                "en": "Headquarters & Strategic Consulting.",
+                "ar": "المقر الرئيسي والاستشارات الاستراتيجية."
+              }
+            },
+            {
+              "city": {
+                "en": "Singapore",
+                "ar": "سنغافورة"
+              },
+              "description": {
+                "en": "Asian Logistics Hub & R&D Center.",
+                "ar": "مركز الخدمات اللوجستية والبحث والتطوير في آسيا."
+              }
+            },
+            {
+              "city": {
+                "en": "Munich",
+                "ar": "ميونخ"
+              },
+              "description": {
+                "en": "Engineering Excellence & Precision Manufacturing.",
+                "ar": "مركز التميز الهندسي والتصنيع الدقيق."
+              }
+            }
+          ]
+        },
+        "values": {
+          "title": {
+            "en": "Precision, Integrity, Innovation.",
+            "ar": "الدقة، النزاهة، الابتكار."
+          },
+          "cta": {
+            "label": {
+              "en": "Join Our Legacy",
+              "ar": "انضم إلى إرثنا"
+            },
+            "href": "/careers"
+          },
+          "items": [
+            {
+              "number": "01",
+              "title": {
+                "en": "Absolute Precision",
+                "ar": "الدقة المطلقة"
+              },
+              "description": {
+                "en": "Our tolerance levels are among the most demanding in the industry.",
+                "ar": "معايير الدقة لدينا من الأكثر صرامة في القطاع."
+              }
+            },
+            {
+              "number": "02",
+              "title": {
+                "en": "Unwavering Integrity",
+                "ar": "نزاهة لا تتزعزع"
+              },
+              "description": {
+                "en": "Transparency, ethics, and long-term partnerships define our work.",
+                "ar": "الشفافية والأخلاقيات والشراكات طويلة الأمد هي أساس عملنا."
+              }
+            },
+            {
+              "number": "03",
+              "title": {
+                "en": "Driven Innovation",
+                "ar": "الابتكار المستمر"
+              },
+              "description": {
+                "en": "We continuously evolve through emerging technologies and sustainable engineering.",
+                "ar": "نواصل التطور من خلال التقنيات الحديثة والهندسة المستدامة."
+              }
+            }
+          ]
+        }
       }
     },
     "work": {
-      "seo": {
-        "title": "أعمالنا",
-        "description": "نظرة على نوعية المشاريع والمساحات التشغيلية التي تدعمها OBT Ltd من خلال التوريد والحلول الصناعية."
-      },
-      "hero": {
-        "eyebrow": "مجالات الدعم",
-        "title": "حضور عملي داخل المشاريع الصناعية والتجارية.",
-        "description": "نعمل مع العملاء على تهيئة بيئات العمل بالمعدات والمواد والحلول المساندة المناسبة."
+      "v2": {
+        "hero": {
+          "eyebrow": {
+            "ar": "أعمالنا",
+            "en": "PORTFOLIO"
+          },
+          "title": {
+            "ar": "تميّز هندسي في حركة مستمرة",
+            "en": "Engineering Excellence in Motion"
+          },
+          "highlight": {
+            "ar": "في حركة مستمرة",
+            "en": "in Motion"
+          },
+          "description": {
+            "ar": "اكتشف سجلنا في الدقة والاعتمادية عبر مشاريع صناعية متقدمة.",
+            "en": "Explore our track record of precision and technical authority. From structural masterpieces to advanced industrial automation, OBT Ltd delivers engineered solutions that redefine efficiency and aesthetic rigor."
+          }
+        },
+        "projects": [
+          {
+            "category": {
+              "ar": "هندسة الواجهات",
+              "en": "FACADE ENGINEERING"
+            },
+            "title": {
+              "ar": "واجهة ميريديان",
+              "en": "The Meridian Facade"
+            },
+            "description": {
+              "ar": "غلاف زجاجي إنشائي عالي الأداء صمم لمقر مؤسسي رائد مع متطلبات صارمة للكفاءة الحرارية.",
+              "en": "A high-performance structural glass envelope designed for a flagship corporate headquarters. This project required bespoke steel connections and thermal modeling to achieve seamless transparency while maintaining strict energy efficiency standards."
+            },
+            "image": {
+              "src": "https://lh3.googleusercontent.com/aida/ADBb0uiKvn3YBGZ1p2LlHhEvYpKfjjDR0FiWmgv8J-XXPzOVpiikKmG-1lrJ9CA4MmnP7xUK8FAzOPNTlXm_oRUMkaLoun456ou3vOcTYSjigi8M48_8R7vXiATBljqsptzh5--6uzejSvCPvFx8RE7VONc6h57FRGIMyl8_jLnbCCFgLbxCk2T6Opc850mLyp3OEm7L2M4Df1a2IDDBGt4G6BpTa1-v1Miph09NSCGdfJ1dCmFWtEktzbmT",
+              "alt": {
+                "ar": "هندسة واجهات صناعية",
+                "en": "Industrial Architecture"
+              }
+            },
+            "caseCta": {
+              "label": {
+                "ar": "عرض دراسة الحالة",
+                "en": "View Case Study"
+              },
+              "href": "#"
+            }
+          },
+          {
+            "category": {
+              "ar": "الأتمتة والأنظمة",
+              "en": "AUTOMATION & SYSTEMS"
+            },
+            "title": {
+              "ar": "مشروع Alpha Automate",
+              "en": "Project: Alpha Automate"
+            },
+            "description": {
+              "ar": "إعادة تصميم خط التجميع الأساسي عبر دمج الروبوتات الدقيقة والقياس اللحظي لرفع الإنتاجية.",
+              "en": "Redesigning the core assembly line for a leading semiconductor manufacturer. By integrating precision robotics and real-time telemetry, OBT Ltd achieved a 22% increase in throughput while reducing waste by nearly double digits."
+            },
+            "image": {
+              "src": "https://lh3.googleusercontent.com/aida/ADBb0uhbh02Z7boVaOVfnZHjaZCrvV1IBMXgx_0dRcMNfV2OgAueuA09a0PC9rri1fpbC56WCl-ThqNLtd1s-IzUhyvtvCXt2P2UBuACp0b2MZ-aBR-NG_4SvLKKInXdISZH5f0wWdJJW7-sUD9iXFkTZ6b1w0o3rGuldhJz0jBbfQ1xA43_MsikVw0ZxE0C8lC7DR6zFSegiTq5uSTA8HQIFQ0YCWfn_YFBxxDFEtvE1xzzAn9i9gMZGfMG",
+              "alt": {
+                "ar": "أتمتة التصنيع",
+                "en": "Manufacturing Automation"
+              }
+            },
+            "caseCta": {
+              "label": {
+                "ar": "عرض دراسة الحالة",
+                "en": "View Case Study"
+              },
+              "href": "#"
+            }
+          },
+          {
+            "category": {
+              "ar": "تقنيات التوربينات",
+              "en": "TURBINE TECHNOLOGY"
+            },
+            "title": {
+              "ar": "إعادة هندسة ديناميكيات التوربين",
+              "en": "Turbine Dynamics Re-engineered"
+            },
+            "description": {
+              "ar": "تحليل اهتزازي متقدم وحلول موازنة مصممة خصيصًا لتمديد العمر التشغيلي للتوربينات.",
+              "en": "A specialized consultancy engagement focusing on the vibrational analysis and corrective balancing of large-scale hydro turbines. Our team developed custom damping solutions that extended the operational lifecycle by a projected fifteen years."
+            },
+            "image": {
+              "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuB-TYyyQ1Vz1yoVowVVANiNsKS5R2E5EdXZO156KycWdE9wxwofm6jqrZLC2vDIXPa_-XnZR27y_ksP8ZZjGDnWvjAsauJ85S2Ym6iErGPuwkvbwB3cJ5rwZdH6qqAua4pY8aI5mNiabDuqOZxhuPsn7ILFvEHRSti8TWst2-6V6Ql6PtPxJb5J9rDT1VQPQCCeMBn0HHrXECfyfewzOLcI-BNWELaJ03CyXeolegG6rkks2xADFEGiDIIloCUutgvCE6DaAO97",
+              "alt": {
+                "ar": "مكونات توربين صناعي",
+                "en": "Heavy industrial turbine components"
+              }
+            },
+            "caseCta": {
+              "label": {
+                "ar": "عرض دراسة الحالة",
+                "en": "View Case Study"
+              },
+              "href": "#"
+            }
+          }
+        ],
+        "cta": {
+          "title": {
+            "ar": "هل لديك مشروع معقد؟",
+            "en": "Have a Complex Project?"
+          },
+          "description": {
+            "ar": "مستشارونا جاهزون لتقديم دقة تقنية ورؤية صناعية لمشروعك القادم.",
+            "en": "Our engineering consultants are ready to bring technical precision and industrial foresight to your next venture."
+          },
+          "primary": {
+            "label": {
+              "ar": "تواصل واتساب",
+              "en": "WhatsApp Contact"
+            },
+            "href": "https://wa.me/963960708022"
+          },
+          "secondary": {
+            "label": {
+              "ar": "إرسال استفسار",
+              "en": "Send Inquiry"
+            },
+            "href": {
+              "ar": "/contact",
+              "en": "/contact"
+            }
+          }
+        }
       }
     },
     "services": {
@@ -613,37 +684,1052 @@
       }
     },
     "contact": {
-      "seo": {
-        "title": "اتصل بنا",
-        "description": "تواصل مع OBT Ltd للحصول على معلومات عن المنتجات والخدمات وحلول التوريد الصناعي."
-      },
-      "hero": {
-        "eyebrow": "تواصل مباشر",
-        "title": "نحن جاهزون للإجابة على استفساراتك ودعم احتياجاتك التشغيلية.",
-        "description": "يمكنك التواصل معنا مباشرة لطلب معلومات عن المنتجات أو الخدمات أو ترتيبات التوريد."
-      },
-      "actions": [
-        {
-          "type": "phone",
-          "label": "اتصال المبيعات",
-          "value": "+963960708022"
+      "v2": {
+        "hero": {
+          "eyebrow": {
+            "ar": "تواصل معنا",
+            "en": "GET IN TOUCH"
+          },
+          "title": {
+            "ar": "نربط الدقة بالطموح العالمي.",
+            "en": "Connecting Precision with Global Ambition."
+          },
+          "description": {
+            "ar": "سواء كنت تبدأ مشروعًا جديدًا أو تبحث عن استشارة متقدمة، فريقنا جاهز لدعمك.",
+            "en": "Whether you are initiating a new project or seeking high-level consultation, our partners are ready to provide technical excellence and architectural rigor to your vision."
+          }
         },
-        {
-          "type": "phone",
-          "label": "الاستفسارات",
-          "value": "+963960708021"
+        "quickContact": [
+          {
+            "label": {
+              "ar": "استفسارات عامة",
+              "en": "GENERAL INQUIRIES"
+            },
+            "value": {
+              "ar": "info@obt-engineering.com",
+              "en": "info@obt-engineering.com"
+            },
+            "icon": "mail",
+            "href": "mailto:info@obt-engineering.com"
+          },
+          {
+            "label": {
+              "ar": "اتصال مباشر",
+              "en": "DIRECT ACCESS"
+            },
+            "value": {
+              "ar": "+44 (0) 20 7946 0123",
+              "en": "+44 (0) 20 7946 0123"
+            },
+            "icon": "phone",
+            "href": "tel:+4402079460123"
+          }
+        ],
+        "inquiryForm": {
+          "title": {
+            "ar": "نموذج الاستفسار",
+            "en": "Inquiry Form"
+          },
+          "fields": [
+            {
+              "label": {
+                "ar": "الاسم الكامل",
+                "en": "FULL NAME"
+              },
+              "placeholder": {
+                "ar": "الاسم الكامل",
+                "en": "Johnathan Doe"
+              },
+              "type": "text"
+            },
+            {
+              "label": {
+                "ar": "البريد الإلكتروني",
+                "en": "EMAIL ADDRESS"
+              },
+              "placeholder": {
+                "ar": "email@company.com",
+                "en": "j.doe@corporate.com"
+              },
+              "type": "email"
+            },
+            {
+              "label": {
+                "ar": "طبيعة الاستفسار",
+                "en": "NATURE OF INQUIRY"
+              },
+              "type": "select",
+              "options": [
+                {
+                  "ar": "حلول هندسية",
+                  "en": "Engineering Solutions"
+                },
+                {
+                  "ar": "استشارات واستراتيجية",
+                  "en": "Consulting & Strategy"
+                },
+                {
+                  "ar": "طلب دراسة حالة",
+                  "en": "Case Study Request"
+                },
+                {
+                  "ar": "استفسار شراكة",
+                  "en": "Partnership Inquiry"
+                }
+              ]
+            },
+            {
+              "label": {
+                "ar": "الرسالة",
+                "en": "MESSAGE"
+              },
+              "placeholder": {
+                "ar": "وصف مختصر لاحتياجك...",
+                "en": "Briefly describe your requirements..."
+              },
+              "type": "textarea"
+            }
+          ],
+          "submit": {
+            "ar": "إرسال الاستفسار",
+            "en": "Transmit Inquiry"
+          }
         },
-        {
-          "type": "email",
-          "label": "البريد الإلكتروني",
-          "value": "obtltd@zohomail.com"
+        "mapPanel": {
+          "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13309.023726373382!2d36.25232213068848!3d33.494717861326755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1779619762895!5m2!1sen!2s",
+          "image": {
+            "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCSSTUETQxVg6FZL34gOL7kbO-GMtSRnTeUuuePT0B0dbsiY5Nx3EOlU11cRY7cESuWsfo05IYnsxybVbPfPWh2Gu9lLgmzReY4yseBQ_FB7phnOqhITb4AGa5WIdpVtKKef5xheLzcltmDqBAium4i4c2d6qXYncnept4B8XwcEwqNgefXqs_7SOf_pf0pzhh8jJltrxAGOMgA5QZbrpD9CGJFCcDrvym7B9X3HmvGrqjkJvIX574F5mqgMx2gmN3OOApi_uuY",
+            "alt": {
+              "ar": "خريطة التواجد العالمي",
+              "en": "Global Presence Map"
+            }
+          },
+          "title": {
+            "ar": "مركز العمليات",
+            "en": "Operational Hub"
+          },
+          "description": {
+            "ar": "مقر لندن يمثل مركز التنسيق العالمي للهندسة والتخطيط.",
+            "en": "Our London headquarters serves as the central node for global engineering coordination and strategic planning."
+          },
+          "cta": {
+            "label": {
+              "ar": "فتح الاتجاهات",
+              "en": "Open Map Direction"
+            },
+            "href": "https://maps.app.goo.gl/CZtoxBsJ1qe9shDJ8"
+          }
         },
-        {
-          "type": "whatsapp",
-          "label": "واتساب",
-          "value": "+963960708022"
+        "globalOffices": {
+          "title": {
+            "ar": "المكاتب العالمية",
+            "en": "Global Offices"
+          },
+          "list": [
+            {
+              "city": {
+                "ar": "لندن، المملكة المتحدة",
+                "en": "LONDON, UK"
+              },
+              "name": {
+                "ar": "المقر المركزي",
+                "en": "Central Headquarters"
+              },
+              "address": {
+                "ar": "88 Wood Street, 10th Floor\nLondon EC2V 7RS\nUnited Kingdom",
+                "en": "88 Wood Street, 10th Floor\nLondon EC2V 7RS\nUnited Kingdom"
+              },
+              "phone": "+44 (0) 20 7946 0123"
+            },
+            {
+              "city": {
+                "ar": "سنغافورة",
+                "en": "SINGAPORE"
+              },
+              "name": {
+                "ar": "مركز آسيا اللوجستي",
+                "en": "APAC Logistics Hub"
+              },
+              "address": {
+                "ar": "12 Marina Boulevard, MBFC Tower 3\nSingapore 018982\nSingapore",
+                "en": "12 Marina Boulevard, MBFC Tower 3\nSingapore 018982\nSingapore"
+              },
+              "phone": "+65 6789 0123"
+            },
+            {
+              "city": {
+                "ar": "ميونخ، ألمانيا",
+                "en": "MUNICH, DE"
+              },
+              "name": {
+                "ar": "مركز التميز الهندسي",
+                "en": "Engineering Excellence"
+              },
+              "address": {
+                "ar": "Maximilianstraße 35A\n80539 München\nGermany",
+                "en": "Maximilianstraße 35A\n80539 München\nGermany"
+              },
+              "phone": "+49 (0) 89 2345 6789"
+            }
+          ]
         }
-      ]
+      }
+    },
+    "productsV2": {
+      "hero": {
+        "eyebrow": {
+          "ar": "التميز الصناعي",
+          "en": "Industrial Excellence"
+        },
+        "title": {
+          "ar": "مجموعة حلول هندسية دقيقة",
+          "en": "Precision Engineering Portfolio"
+        },
+        "description": {
+          "ar": "اكتشف مجموعتنا من المعدات الصناعية عالية الأداء المصممة للدقة والاعتمادية طويلة الأمد.",
+          "en": "Discover our collection of high-performance industrial machinery, designed for meticulous accuracy and long-term reliability in demanding production environments."
+        }
+      },
+      "cardCta": {
+        "ar": "عرض المواصفات الفنية",
+        "en": "View Technical Specs"
+      },
+      "catalogCta": {
+        "title": {
+          "ar": "حمّل الكتالوج الصناعي الكامل 2024",
+          "en": "Download the Complete 2024 Industrial Catalog"
+        },
+        "description": {
+          "ar": "احصل على الرسومات الفنية الكاملة ومتطلبات التشغيل وبيانات الأداء المقارنة.",
+          "en": "Get access to full technical drawings, electrical requirements, and comparative performance data for our entire machine fleet."
+        },
+        "primaryButton": {
+          "label": {
+            "ar": "تحميل PDF",
+            "en": "Download PDF"
+          },
+          "href": {
+            "ar": "/catalog.pdf",
+            "en": "/catalog.pdf"
+          }
+        },
+        "secondaryButton": {
+          "label": {
+            "ar": "طلب نسخة ورقية",
+            "en": "Request Physical Copy"
+          },
+          "href": {
+            "ar": "/contact",
+            "en": "/contact"
+          }
+        }
+      }
+    },
+    "homeV2": {
+      "hero": {
+        "eyebrow": {
+          "ar": "منذ 1994",
+          "en": "ESTABLISHED 1994"
+        },
+        "title": {
+          "ar": "تميّز صناعي عبر الدقة.",
+          "en": "Industrial Excellence Through Precision."
+        },
+        "description": {
+          "ar": "نقدم حلولاً هندسية وصناعية عالية الاعتمادية للبيئات الأكثر تطلباً.",
+          "en": "We deliver high-end corporate consulting and heavy industrial engineering solutions designed for the world's most demanding environments."
+        },
+        "primary": {
+          "label": {
+            "ar": "تحميل الكتالوج",
+            "en": "Download Catalog"
+          },
+          "href": {
+            "ar": "/catalog.pdf",
+            "en": "/catalog.pdf"
+          }
+        },
+        "secondary": {
+          "label": {
+            "ar": "تواصل واتساب",
+            "en": "WhatsApp Contact"
+          },
+          "href": {
+            "ar": "https://wa.me/963960708022",
+            "en": "https://wa.me/963960708022"
+          }
+        },
+        "media": {
+          "src": "/assets/home/hero.png",
+          "alt": {
+            "ar": "بيئة صناعية متقدمة",
+            "en": "Advanced industrial environment"
+          }
+        }
+      },
+      "about": {
+        "eyebrow": {
+          "ar": "معدات مميزة",
+          "en": "PREMIUM MACHINERY"
+        },
+        "title": {
+          "ar": "خبرة تقنية هادئة. دقة تشغيلية.",
+          "en": "Quiet Authority. Technical Rigor."
+        },
+        "description": {
+          "ar": "في OBT Ltd نؤمن أن التميّز الحقيقي يظهر في الأداء المستقر والنتائج القابلة للقياس.",
+          "en": "At OBT Ltd, we believe that true engineering excellence does not shout. It functions flawlessly and delivers measurable outcomes."
+        },
+        "stats": {
+          "value": {
+            "ar": "30+",
+            "en": "30+"
+          },
+          "text": {
+            "ar": "سنة من الخبرة التقنية",
+            "en": "Years of technical leadership"
+          }
+        },
+        "bullets": [
+          {
+            "title": {
+              "ar": "هندسة مخصصة",
+              "en": "Bespoke Engineering"
+            },
+            "text": {
+              "ar": "حلول تشغيلية مصممة حسب التطبيق الصناعي.",
+              "en": "Custom-machined solutions for niche industrial applications."
+            }
+          },
+          {
+            "title": {
+              "ar": "تدقيق استراتيجي",
+              "en": "Strategic Audits"
+            },
+            "text": {
+              "ar": "تحسين الأداء والامتثال عبر مراجعات منهجية.",
+              "en": "Comprehensive compliance and performance optimization."
+            }
+          }
+        ],
+        "media": {
+          "src": "/assets/home/unnamed (4).png",
+          "alt": {
+            "ar": "منشأة صناعية حديثة",
+            "en": "Modern industrial facility"
+          }
+        }
+      },
+      "services": {
+        "eyebrow": {
+          "ar": "قدراتنا",
+          "en": "OUR CAPABILITIES"
+        },
+        "title": {
+          "ar": "حلول مصممة للاستمرارية",
+          "en": "Engineered for Permanence"
+        },
+        "list": [
+          {
+            "title": {
+              "ar": "تصنيع دقيق",
+              "en": "Precision Manufacturing"
+            },
+            "description": {
+              "ar": "مكونات عالية الدقة لتطبيقات صناعية متقدمة.",
+              "en": "Micro-tolerance components for high-stress industries."
+            }
+          },
+          {
+            "title": {
+              "ar": "استشارات مؤسسية",
+              "en": "Corporate Consulting"
+            },
+            "description": {
+              "ar": "مواءمة التميز التشغيلي مع النمو المؤسسي.",
+              "en": "Aligning operational excellence with financial growth."
+            }
+          },
+          {
+            "title": {
+              "ar": "تصميم بنية تحتية",
+              "en": "Infrastructure Design"
+            },
+            "description": {
+              "ar": "هندسة مستقبلية تركز على الاستدامة والمتانة.",
+              "en": "Next-generation design focused on sustainability and longevity."
+            }
+          }
+        ]
+      },
+      "featured": {
+        "eyebrow": {
+          "ar": "معدات مميزة",
+          "en": "PREMIUM MACHINERY"
+        },
+        "title": {
+          "ar": "منتجات مختارة",
+          "en": "Featured Products"
+        },
+        "cta": {
+          "ar": "استعرض المواصفات",
+          "en": "Explore Specifications"
+        },
+        "list": [
+          {
+            "title": {
+              "ar": "Precision CNC Router",
+              "en": "Precision CNC Router"
+            },
+            "description": {
+              "ar": "نظام توجيه 5 محاور مع معايرة تلقائية.",
+              "en": "Advanced 5-axis routing system with automated calibration."
+            },
+            "image": {
+              "src": "/assets/home/unnamed (1).png",
+              "alt": {
+                "ar": "ماكينة CNC دقيقة",
+                "en": "Precision CNC router"
+              }
+            },
+            "href": {
+              "ar": "/products/titan-x-12-precision",
+              "en": "/products/titan-x-12-precision"
+            }
+          },
+          {
+            "title": {
+              "ar": "Fiber Laser Machine",
+              "en": "Fiber Laser Machine"
+            },
+            "description": {
+              "ar": "ليزر عالي القدرة لقص سريع ودقيق.",
+              "en": "High-wattage laser for fast, accurate cutting."
+            },
+            "image": {
+              "src": "/assets/home/unnamed (2).png",
+              "alt": {
+                "ar": "ماكينة ليزر ألياف",
+                "en": "Fiber laser machine"
+              }
+            },
+            "href": {
+              "ar": "/products/luminary-fiber-4k",
+              "en": "/products/luminary-fiber-4k"
+            }
+          },
+          {
+            "title": {
+              "ar": "Industrial Edge Bander",
+              "en": "Industrial Edge Bander"
+            },
+            "description": {
+              "ar": "تشطيب حواف آلي عالي الجودة.",
+              "en": "Automated edge finishing system."
+            },
+            "image": {
+              "src": "/assets/home/unnamed (3).png",
+              "alt": {
+                "ar": "ماكينة تلبيس حواف",
+                "en": "Industrial edge bander"
+              }
+            },
+            "href": {
+              "ar": "/products/luminary-fiber-4k",
+              "en": "/products/luminary-fiber-4k"
+            }
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "value": "1.2B",
+          "label": {
+            "ar": "قيمة الأصول العالمية",
+            "en": "Global Asset Value"
+          }
+        },
+        {
+          "value": "98%",
+          "label": {
+            "ar": "كفاءة المشاريع",
+            "en": "Project Efficiency"
+          }
+        },
+        {
+          "value": "45",
+          "label": {
+            "ar": "دولة مخدومة",
+            "en": "Countries Served"
+          }
+        },
+        {
+          "value": "0",
+          "label": {
+            "ar": "إخفاقات هيكلية",
+            "en": "Structural Failures"
+          }
+        }
+      ],
+      "contact": {
+        "eyebrow": {
+          "ar": "معدات مميزة",
+          "en": "PREMIUM MACHINERY"
+        },
+        "title": {
+          "ar": "ابدأ استشارتك",
+          "en": "Begin Your Consultation"
+        },
+        "description": {
+          "ar": "تواصل مع فريقنا الفني لمناقشة متطلبات مشروعك أو طلب كتالوج تقني.",
+          "en": "Connect with our engineering specialists to discuss your project requirements or request a technical catalog."
+        },
+        "details": [
+          {
+            "icon": "map-pin",
+            "label": {
+              "ar": "المقر الرئيسي",
+              "en": "Global Headquarters"
+            },
+            "value": {
+              "ar": "دمشق - سوق الهال",
+              "en": "Damascus - Souq Alhal"
+            }
+          },
+          {
+            "icon": "mail",
+            "label": {
+              "ar": "استفسار مباشر",
+              "en": "Direct Inquiry"
+            },
+            "value": {
+              "ar": "obtltd@zohomail.com",
+              "en": "obtltd@zohomail.com"
+            }
+          }
+        ],
+        "catalogCard": {
+          "title": {
+            "ar": "طلب الكتالوج الكامل",
+            "en": "Request Complete Catalog"
+          },
+          "text": {
+            "ar": "استلم دليل المواصفات الفنية عبر واتساب أو البريد.",
+            "en": "Receive our technical specification guide via WhatsApp or email."
+          },
+          "button": {
+            "label": {
+              "ar": "تواصل عبر واتساب الآن",
+              "en": "WhatsApp Contact Now"
+            },
+            "href": {
+              "ar": "https://wa.me/963960708022",
+              "en": "https://wa.me/963960708022"
+            }
+          }
+        },
+        "form": {
+          "fields": [
+            {
+              "label": {
+                "ar": "الاسم الكامل",
+                "en": "FULL NAME"
+              },
+              "placeholder": {
+                "ar": "أدخل الاسم الكامل",
+                "en": "John Doe"
+              },
+              "type": "text"
+            },
+            {
+              "label": {
+                "ar": "الشركة",
+                "en": "COMPANY"
+              },
+              "placeholder": {
+                "ar": "اسم الشركة",
+                "en": "Organization Ltd"
+              },
+              "type": "text"
+            },
+            {
+              "label": {
+                "ar": "البريد الإلكتروني",
+                "en": "EMAIL ADDRESS"
+              },
+              "placeholder": {
+                "ar": "name@company.com",
+                "en": "john@company.com"
+              },
+              "type": "email"
+            },
+            {
+              "label": {
+                "ar": "ملخص المشروع",
+                "en": "PROJECT BRIEF"
+              },
+              "placeholder": {
+                "ar": "اكتب احتياجك الهندسي أو التشغيلي...",
+                "en": "Tell us about your engineering or consulting needs..."
+              },
+              "type": "textarea"
+            }
+          ],
+          "submit": {
+            "ar": "إرسال الاستفسار",
+            "en": "Submit Inquiry"
+          }
+        },
+        "map": {
+          "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13309.023726373382!2d36.25232213068848!3d33.494717861326755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1779619762895!5m2!1sen!2s",
+          "href": "https://maps.app.goo.gl/CZtoxBsJ1qe9shDJ8",
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZaGqdezoEfQXN3YaYpyGKNXf0aDCnPQj0vC_FrZacyz9EOtkt8bYql4U-bs2cAHRjVLXCmERYY8-lGCwPTWnDCnnQ4o8CHBdPB99CzGVLfqmqIynPvq6nJcXHgtQvDeHIbJNF1TsmLbUMIhjsxlKSlQcBYFHyYIDW51__hJwChwsF1YcoLI6I8T7CzbO3wXy-A7C1PrpFoZeatDjnsrCa6_KZmUs1-kda7RRV57WtnGpWvuR_yU4fcUGRvUKUGdRnJyK90jlT",
+          "alt": {
+            "ar": "خريطة موقع الشركة",
+            "en": "Company location map"
+          }
+        }
+      },
+      "showcase": {
+        "eyebrow": {
+          "ar": "معدات مميزة",
+          "en": "PREMIUM MACHINERY"
+        },
+        "title": {
+          "ar": "معدات أساسية",
+          "en": "Core Equipment"
+        },
+        "description": {
+          "ar": "أدوات دقيقة للصناعة الحديثة.",
+          "en": "Precision tools for modern industry."
+        },
+        "cta": {
+          "label": {
+            "ar": "عرض كل المنتجات",
+            "en": "View All Products"
+          },
+          "href": {
+            "ar": "/products",
+            "en": "/products"
+          }
+        },
+        "list": [
+          {
+            "title": {
+              "ar": "Titan-X Valving",
+              "en": "Titan-X Valving"
+            },
+            "text": {
+              "ar": "تحكم سوائل عالي الضغط.",
+              "en": "Ultra-high pressure fluid control."
+            },
+            "image": {
+              "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZaGqdezoEfQXN3YaYpyGKNXf0aDCnPQj0vC_FrZacyz9EOtkt8bYql4U-bs2cAHRjVLXCmERYY8-lGCwPTWnDCnnQ4o8CHBdPB99CzGVLfqmqIynPvq6nJcXHgtQvDeHIbJNF1TsmLbUMIhjsxlKSlQcBYFHyYIDW51__hJwChwsF1YcoLI6I8T7CzbO3wXy-A7C1PrpFoZeatDjnsrCa6_KZmUs1-kda7RRV57WtnGpWvuR_yU4fcUGRvUKUGdRnJyK90jlT",
+              "alt": {
+                "ar": "صمام صناعي",
+                "en": "Industrial valve"
+              }
+            }
+          },
+          {
+            "title": {
+              "ar": "Nexus Interface",
+              "en": "Nexus Interface"
+            },
+            "text": {
+              "ar": "منظومة مراقبة PLC متكاملة.",
+              "en": "Integrated PLC monitoring system."
+            },
+            "image": {
+              "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZaGqdezoEfQXN3YaYpyGKNXf0aDCnPQj0vC_FrZacyz9EOtkt8bYql4U-bs2cAHRjVLXCmERYY8-lGCwPTWnDCnnQ4o8CHBdPB99CzGVLfqmqIynPvq6nJcXHgtQvDeHIbJNF1TsmLbUMIhjsxlKSlQcBYFHyYIDW51__hJwChwsF1YcoLI6I8T7CzbO3wXy-A7C1PrpFoZeatDjnsrCa6_KZmUs1-kda7RRV57WtnGpWvuR_yU4fcUGRvUKUGdRnJyK90jlT",
+              "alt": {
+                "ar": "واجهة تحكم صناعية",
+                "en": "Industrial control interface"
+              }
+            }
+          },
+          {
+            "title": {
+              "ar": "Gearset Prime",
+              "en": "Gearset Prime"
+            },
+            "text": {
+              "ar": "وحدات نقل عزم عالية الكفاءة.",
+              "en": "High-torque transmission blocks."
+            },
+            "image": {
+              "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZaGqdezoEfQXN3YaYpyGKNXf0aDCnPQj0vC_FrZacyz9EOtkt8bYql4U-bs2cAHRjVLXCmERYY8-lGCwPTWnDCnnQ4o8CHBdPB99CzGVLfqmqIynPvq6nJcXHgtQvDeHIbJNF1TsmLbUMIhjsxlKSlQcBYFHyYIDW51__hJwChwsF1YcoLI6I8T7CzbO3wXy-A7C1PrpFoZeatDjnsrCa6_KZmUs1-kda7RRV57WtnGpWvuR_yU4fcUGRvUKUGdRnJyK90jlT",
+              "alt": {
+                "ar": "مجموعة تروس صناعية",
+                "en": "Industrial gear set"
+              }
+            }
+          },
+          {
+            "title": {
+              "ar": "Operational Suites",
+              "en": "Operational Suites"
+            },
+            "text": {
+              "ar": "تجهيزات استشارية ميدانية.",
+              "en": "On-site consulting installations."
+            },
+            "image": {
+              "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZaGqdezoEfQXN3YaYpyGKNXf0aDCnPQj0vC_FrZacyz9EOtkt8bYql4U-bs2cAHRjVLXCmERYY8-lGCwPTWnDCnnQ4o8CHBdPB99CzGVLfqmqIynPvq6nJcXHgtQvDeHIbJNF1TsmLbUMIhjsxlKSlQcBYFHyYIDW51__hJwChwsF1YcoLI6I8T7CzbO3wXy-A7C1PrpFoZeatDjnsrCa6_KZmUs1-kda7RRV57WtnGpWvuR_yU4fcUGRvUKUGdRnJyK90jlT",
+              "alt": {
+                "ar": "تجهيزات تشغيلية",
+                "en": "Operational suites"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "productDetailsV2": {
+      "breadcrumbs": {
+        "home": {
+          "ar": "الرئيسية",
+          "en": "Home"
+        },
+        "solutions": {
+          "ar": "الحلول",
+          "en": "Solutions"
+        },
+        "products": {
+          "ar": "المنتجات",
+          "en": "Products"
+        }
+      },
+      "subtitle": {
+        "ar": "حلول دقيقة للتصنيع الصناعي المتقدم.",
+        "en": "High-precision industrial machining solutions."
+      },
+      "actions": {
+        "brochure": {
+          "label": {
+            "ar": "تحميل الكتيب (PDF)",
+            "en": "Download Brochure (PDF)"
+          },
+          "href": {
+            "ar": "/catalog.pdf",
+            "en": "/catalog.pdf"
+          }
+        },
+        "whatsapp": {
+          "label": {
+            "ar": "استفسار عبر واتساب",
+            "en": "Inquire via WhatsApp"
+          },
+          "href": "https://wa.me/963960708022"
+        },
+        "quote": {
+          "label": {
+            "ar": "طلب عرض سعر",
+            "en": "Request Quote"
+          },
+          "href": {
+            "ar": "/contact",
+            "en": "/contact"
+          }
+        }
+      },
+      "trust": [
+        {
+          "title": {
+            "ar": "ضمان ممتد 5 سنوات",
+            "en": "5-Year Extended Warranty"
+          },
+          "text": {
+            "ar": "تغطية شاملة مع دعم فني سريع.",
+            "en": "Comprehensive coverage including on-site technical support."
+          }
+        },
+        {
+          "title": {
+            "ar": "نشر عالمي",
+            "en": "Global Deployment"
+          },
+          "text": {
+            "ar": "تركيب وتدريب عبر خبراء معتمدين.",
+            "en": "Seamless installation and training worldwide by certified experts."
+          }
+        }
+      ],
+      "related": {
+        "title": {
+          "ar": "منتجات ذات صلة",
+          "en": "Related Products"
+        }
+      }
     }
+  },
+  "i18n": {
+    "defaultLocale": "ar",
+    "locales": [
+      "ar",
+      "en"
+    ],
+    "directions": {
+      "ar": "rtl",
+      "en": "ltr"
+    }
+  },
+  "productsV2": {
+    "list": [
+      {
+        "slug": "titan-x-12-precision",
+        "category": {
+          "ar": "سلسلة CNC Router",
+          "en": "CNC ROUTER SERIES"
+        },
+        "title": {
+          "ar": "Titan X-12 Precision",
+          "en": "Titan X-12 Precision"
+        },
+        "badge": {
+          "ar": "موديل جديد",
+          "en": "NEW MODEL"
+        },
+        "image": {
+          "src": "/assets/hero/02_main_cnc_machine.png",
+          "alt": {
+            "ar": "ماكينة CNC صناعية عالية الأداء",
+            "en": "High-performance industrial CNC machine"
+          }
+        },
+        "specs": [
+          {
+            "label": {
+              "ar": "سرعة المغزل",
+              "en": "Spindle Speed"
+            },
+            "value": {
+              "ar": "24,000 RPM",
+              "en": "24,000 RPM"
+            }
+          },
+          {
+            "label": {
+              "ar": "نظام الحركة",
+              "en": "Motion System"
+            },
+            "value": {
+              "ar": "5-Axis Sync",
+              "en": "5-Axis Sync"
+            }
+          },
+          {
+            "label": {
+              "ar": "مقاس الطاولة",
+              "en": "Table Size"
+            },
+            "value": {
+              "ar": "1300 x 2500 mm",
+              "en": "1300 x 2500 mm"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "luminary-fiber-4k",
+        "category": {
+          "ar": "تقنيات الليزر",
+          "en": "LASER TECHNOLOGY"
+        },
+        "title": {
+          "ar": "Luminary Fiber 4K",
+          "en": "Luminary Fiber 4K"
+        },
+        "image": {
+          "src": "/assets/products/laser-machine.svg",
+          "alt": {
+            "ar": "نظام ليزر صناعي دقيق",
+            "en": "Industrial fiber laser system"
+          }
+        },
+        "specs": [
+          {
+            "label": {
+              "ar": "قدرة الليزر",
+              "en": "Laser Power"
+            },
+            "value": {
+              "ar": "4000 Watts",
+              "en": "4000 Watts"
+            }
+          },
+          {
+            "label": {
+              "ar": "سرعة القص",
+              "en": "Cutting Speed"
+            },
+            "value": {
+              "ar": "120 m/min",
+              "en": "120 m/min"
+            }
+          },
+          {
+            "label": {
+              "ar": "نظام التبريد",
+              "en": "Cooling System"
+            },
+            "value": {
+              "ar": "Integrated Dual",
+              "en": "Integrated Dual"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "luminary-fiber-4k123",
+        "category": {
+          "ar": "تقنيات الليزر",
+          "en": "LASER TECHNOLOGY"
+        },
+        "title": {
+          "ar": "Luminary Fiber 4K",
+          "en": "Luminary Fiber 4K"
+        },
+        "image": {
+          "src": "/assets/products/laser-machine.svg",
+          "alt": {
+            "ar": "نظام ليزر صناعي دقيق",
+            "en": "Industrial fiber laser system"
+          }
+        },
+        "specs": [
+          {
+            "label": {
+              "ar": "قدرة الليزر",
+              "en": "Laser Power"
+            },
+            "value": {
+              "ar": "4000 Watts",
+              "en": "4000 Watts"
+            }
+          },
+          {
+            "label": {
+              "ar": "سرعة القص",
+              "en": "Cutting Speed"
+            },
+            "value": {
+              "ar": "120 m/min",
+              "en": "120 m/min"
+            }
+          },
+          {
+            "label": {
+              "ar": "نظام التبريد",
+              "en": "Cooling System"
+            },
+            "value": {
+              "ar": "Integrated Dual",
+              "en": "Integrated Dual"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "luminary-fiber-4kkk",
+        "category": {
+          "ar": "تقنيات الليزر",
+          "en": "LASER TECHNOLOGY"
+        },
+        "title": {
+          "ar": "Luminary Fiber 4K",
+          "en": "Luminary Fiber 4K"
+        },
+        "image": {
+          "src": "/assets/products/laser-machine.svg",
+          "alt": {
+            "ar": "نظام ليزر صناعي دقيق",
+            "en": "Industrial fiber laser system"
+          }
+        },
+        "specs": [
+          {
+            "label": {
+              "ar": "قدرة الليزر",
+              "en": "Laser Power"
+            },
+            "value": {
+              "ar": "4000 Watts",
+              "en": "4000 Watts"
+            }
+          },
+          {
+            "label": {
+              "ar": "سرعة القص",
+              "en": "Cutting Speed"
+            },
+            "value": {
+              "ar": "120 m/min",
+              "en": "120 m/min"
+            }
+          },
+          {
+            "label": {
+              "ar": "نظام التبريد",
+              "en": "Cooling System"
+            },
+            "value": {
+              "ar": "Integrated Dual",
+              "en": "Integrated Dual"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "luminary-fiber-4kk",
+        "category": {
+          "ar": "تقنيات الليزر",
+          "en": "LASER TECHNOLOGY"
+        },
+        "title": {
+          "ar": "Luminary Fiber 4K",
+          "en": "Luminary Fiber 4K"
+        },
+        "image": {
+          "src": "/assets/products/laser-machine.svg",
+          "alt": {
+            "ar": "نظام ليزر صناعي دقيق",
+            "en": "Industrial fiber laser system"
+          }
+        },
+        "specs": [
+          {
+            "label": {
+              "ar": "قدرة الليزر",
+              "en": "Laser Power"
+            },
+            "value": {
+              "ar": "4000 Watts",
+              "en": "4000 Watts"
+            }
+          },
+          {
+            "label": {
+              "ar": "سرعة القص",
+              "en": "Cutting Speed"
+            },
+            "value": {
+              "ar": "120 m/min",
+              "en": "120 m/min"
+            }
+          },
+          {
+            "label": {
+              "ar": "نظام التبريد",
+              "en": "Cooling System"
+            },
+            "value": {
+              "ar": "Integrated Dual",
+              "en": "Integrated Dual"
+            }
+          }
+        ]
+      }
+    ]
   }
 }

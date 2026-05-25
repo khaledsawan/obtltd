@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="light" lang="en" style="width: 1280px; height: 3261px; overflow: hidden; position: relative;">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>OBT Ltd | Precision CNC Solutions</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Metropolis';
+            src: url('https://fonts.cdnfonts.com/s/14732/Metropolis-Bold.woff') format('woff');
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: 'Metropolis';
+            src: url('https://fonts.cdnfonts.com/s/14732/Metropolis-SemiBold.woff') format('woff');
+            font-weight: 600;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .whisper-shadow {
+            box-shadow: 0px 10px 30px rgba(26, 26, 26, 0.04);
+        }
+
+        .technical-line {
+            height: 1px;
+            background: #E0E0E0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .technical-line::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 30%;
+            background: #D4AF37;
+            animation: slide 3s infinite linear;
+        }
+
+        @keyframes slide {
+            0% {
+                left: -30%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "secondary-fixed-dim": "#c8c6c5", "surface-container-low": "#f3f3f3", "primary-container": "#d4af37", "on-background": "#1a1c1c", "surface-container-highest": "#e2e2e2", "secondary-fixed": "#e5e2e1", "on-tertiary-fixed": "#1b1c1c", "inverse-on-surface": "#f1f1f1", "on-primary-container": "#554300", "on-error": "#ffffff", "outline-variant": "#d0c5af", surface: "#f9f9f9", "inverse-surface": "#2f3131", "surface-bright": "#f9f9f9", "on-tertiary-container": "#454545", "on-secondary-fixed-variant": "#474746", "on-secondary-fixed": "#1c1b1b", "primary-fixed-dim": "#e9c349", "surface-container-high": "#e8e8e8", "surface-tint": "#735c00", "tertiary-fixed-dim": "#c8c6c6", "on-secondary-container": "#636262", "tertiary-container": "#b4b2b2", "surface-container": "#eeeeee", "primary-fixed": "#ffe088", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-surface-variant": "#4d4635", "on-tertiary-fixed-variant": "#474747", "on-primary-fixed": "#241a00", primary: "#735c00", "surface-container-lowest": "#ffffff", "secondary-container": "#e2dfde", error: "#ba1a1a", "surface-variant": "#e2e2e2", "surface-dim": "#dadada", "error-container": "#ffdad6", "tertiary-fixed": "#e4e2e2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#574500", secondary: "#5f5e5e", tertiary: "#5e5e5e", "on-surface": "#1a1c1c", outline: "#7f7663", "inverse-primary": "#e9c349", background: "#f9f9f9" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "margin-desktop": "80px", "container-max": "1440px", base: "8px", gutter: "24px", "section-gap": "120px", "margin-mobile": "20px" }, fontFamily: { "display-lg": ["Metropolis"], "headline-lg": ["Metropolis"], "body-md": ["Manrope"], "label-caps": ["Manrope"], "headline-md": ["Metropolis"], "body-lg": ["Manrope"], "headline-lg-mobile": ["Metropolis"], headline: ["Metropolis"], display: ["Metropolis"], body: ["Manrope"], label: ["Manrope"] }, fontSize: { "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["40px", { lineHeight: "1.2", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }], "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "700" }], "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }], "headline-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "600" }] } } } };</script>
+</head>
+
+<body class="bg-background text-on-surface antialiased">
+    <!-- Top Navigation Bar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant shadow-[0px_10px_30px_rgba(26,26,26,0.04)] h-20">
+        <div class="flex justify-between items-center h-full px-margin-desktop max-w-container-max mx-auto">
+            <div class="font-display-lg text-headline-md tracking-tighter text-on-surface">OBT Ltd</div>
+            <nav class="hidden md:flex items-center gap-12"><a
+                    class="text-secondary font-medium font-body-lg text-body-lg hover:text-primary transition-colors duration-300"
+                    href="#">Home</a>
+                <a class="text-secondary font-medium font-body-lg text-body-lg hover:text-primary transition-colors duration-300"
+                    href="#">Products</a>
+                <a class="text-primary border-b-2 border-primary font-bold font-body-lg text-body-lg h-20 flex items-center"
+                    href="#">Product Details</a>
+                <a class="text-secondary font-medium font-body-lg text-body-lg hover:text-primary transition-colors duration-300"
+                    href="#">Who We Are</a>
+                <a class="text-secondary font-medium font-body-lg text-body-lg hover:text-primary transition-colors duration-300"
+                    href="#">Our Work</a>
+                <a class="text-secondary font-medium font-body-lg text-body-lg hover:text-primary transition-colors duration-300"
+                    href="#">Our Services</a>
+                <a class="text-secondary font-medium font-body-lg text-body-lg hover:text-primary transition-colors duration-300"
+                    href="#">Contact Us</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden lg:block font-label-caps uppercase text-secondary px-6 py-3 border border-outline hover:border-primary transition-all duration-200 rounded-lg">WhatsApp
+                    Contact</button>
+                <button
+                    class="bg-primary-container text-on-primary-container font-label-caps uppercase px-8 py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all">Download
+                    Catalog</button>
+            </div>
+        </div>
+    </header>
+    <main class="pt-32 pb-section-gap max-w-container-max mx-auto px-margin-desktop">
+        <!-- Breadcrumb & Product Intro -->
+        <div class="mb-12">
+            <div class="flex items-center gap-2 text-on-surface-variant font-label-caps uppercase mb-4">
+                <span class="">Solutions</span>
+                <span class="material-symbols-outlined text-sm">chevron_right</span>
+                <span class="">CNC Machinery</span>
+                <span class="material-symbols-outlined text-sm">chevron_right</span>
+                <span class="text-primary">X-Series Ultra Pro</span>
+            </div>
+            <h1 class="font-display-lg text-display-lg max-w-4xl">X-Series Ultra Pro CNC Router</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl">High-precision industrial
+                machining for heavy-duty composite and aerospace grade aluminum fabrication.</p>
+        </div>
+        <!-- Product Gallery Bento Grid -->
+        <div class="grid grid-cols-12 gap-gutter h-[700px] mb-section-gap">
+            <div class="col-span-8 bg-surface-container-high rounded-lg overflow-hidden relative group">
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    data-alt="A high-end industrial CNC router machine in a clean, modern manufacturing facility with pristine white floors. The machine is captured in a wide architectural shot with soft natural lighting streaming from large factory windows. The overall aesthetic is industrial luxury, focusing on the metallic surfaces and the intricate mechanical arm. A sense of quiet precision and massive engineering power is felt."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZaGqdezoEfQXN3YaYpyGKNXf0aDCnPQj0vC_FrZacyz9EOtkt8bYql4U-bs2cAHRjVLXCmERYY8-lGCwPTWnDCnnQ4o8CHBdPB99CzGVLfqmqIynPvq6nJcXHgtQvDeHIbJNF1TsmLbUMIhjsxlKSlQcBYFHyYIDW51__hJwChwsF1YcoLI6I8T7CzbO3wXy-A7C1PrpFoZeatDjnsrCa6_KZmUs1-kda7RRV57WtnGpWvuR_yU4fcUGRvUKUGdRnJyK90jlT"
+                    style="transform-origin: 79.1975% 49.2787%;">
+                <div
+                    class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded border border-outline-variant flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary"
+                        style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <span class="font-label-caps">Aerospace Certified Accuracy</span>
+                </div>
+            </div>
+            <div class="col-span-4 grid grid-rows-2 gap-gutter">
+                <div class="bg-surface-container-high rounded-lg overflow-hidden group">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        data-alt="A close-up high-detail shot of a CNC spindle head carving a complex geometric pattern into a block of brushed aluminum. Sparks are absent, highlighting the cooling system's efficiency with a fine mist of lubricant. The lighting is sharp and technical, emphasizing the micro-textures of the metal and the precision of the diamond-tipped bit. The color palette is cool silver and deep charcoal."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwPffqXXIGI_BM-uJTZ06q_YTMYfduoJwbzsiEgrhvUfyULIiBcWEUjSZpLVuVh9q3mpjdXTmHn35-uFlXEpCeobiqKQ3gRlZUZAW5el1--CDL9NMBN8l-ao1H0MTn2Lb7g5-1c2A6U2Til6ZW6Z007gXnJ8PlfqRNj4xNtfhN48ifT-la3BhkphzjHoVequhVBCJS0_AtqsrAHayqrgtmJeclhXOGCEZzjmoj9gefLFZViVD_VL2rMVrhva4FAWpa3uQgX4UJ"
+                        style="transform-origin: 9.54651% 95.6688%;">
+                </div>
+                <div class="bg-surface-container-high rounded-lg overflow-hidden group">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        data-alt="The control console of a high-end CNC machine showing a sophisticated digital interface with 3D wireframe models. The screen is clear and bright, reflecting a minimalist dark-mode software design. The operator's hand is visible on a high-quality physical dial, suggesting human-machine synergy. The background is a soft-focus workshop, maintaining a clean and professional look."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhSFR-TihZuXLtTrp5FWCBtTs3uYHI10nM7ZLcJul4m-szCEbkKR2AlwTfpAu5pyezJq--Tk09xOMV5a1GnjNjuL_YfmDsOdj8Vm-YYY3sOlaRBTpb9oYNzIqb_uAbfn4NHf40sVkJZ9Tq9xv-xbquglY1R6oZnJBy-ynuzBxzgUzrZUxKh8BRECD0BtLdjMdIutj8TCNgHAYO5UtAeljq5u3jrBjZxvJkQv7c92JByvEHYfQPJofyZo6O9Y_KSxUwsuUXqa6c"
+                        style="transform-origin: 3.3612% 42.6296%;">
+                </div>
+            </div>
+        </div>
+        <!-- Technical Content Section -->
+        <div class="grid grid-cols-12 gap-gutter">
+            <!-- Left Column: Specs -->
+            <div class="col-span-12 lg:col-span-7">
+                <div class="bg-white border border-outline-variant rounded-lg p-10 whisper-shadow">
+                    <h3 class="font-headline-md text-headline-md mb-8 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">settings_input_component</span>
+                        Technical Specifications
+                    </h3>
+                    <div class="space-y-0">
+                        <div class="grid grid-cols-2 py-6 border-b border-outline-variant">
+                            <span class="font-label-caps text-on-surface-variant uppercase">Work Area</span>
+                            <span class="font-body-lg text-body-lg font-bold text-on-surface">3050 x 1550 x 300
+                                mm</span>
+                        </div>
+                        <div class="grid grid-cols-2 py-6 border-b border-outline-variant">
+                            <span class="font-label-caps text-on-surface-variant uppercase">Spindle Power</span>
+                            <span class="font-body-lg text-body-lg font-bold text-on-surface">12kW HSK-F63 Liquid
+                                Cooled</span>
+                        </div>
+                        <div class="grid grid-cols-2 py-6 border-b border-outline-variant">
+                            <span class="font-label-caps text-on-surface-variant uppercase">Travel Speed</span>
+                            <span class="font-body-lg text-body-lg font-bold text-on-surface">80 m/min (X/Y) | 30 m/min
+                                (Z)</span>
+                        </div>
+                        <div class="grid grid-cols-2 py-6 border-b border-outline-variant">
+                            <span class="font-label-caps text-on-surface-variant uppercase">Accuracy</span>
+                            <span class="font-body-lg text-body-lg font-bold text-on-surface">± 0.02 mm</span>
+                        </div>
+                        <div class="grid grid-cols-2 py-6 border-b border-outline-variant">
+                            <span class="font-label-caps text-on-surface-variant uppercase">Tool Changer</span>
+                            <span class="font-body-lg text-body-lg font-bold text-on-surface">16-Position Linear
+                                Carousel</span>
+                        </div>
+                        <div class="grid grid-cols-2 py-6">
+                            <span class="font-label-caps text-on-surface-variant uppercase">Vacuum System</span>
+                            <span class="font-body-lg text-body-lg font-bold text-on-surface">Matrix Dual 250m³/h
+                                Pumps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column: CTAs and Inquiry -->
+            <div class="col-span-12 lg:col-span-5 flex flex-col gap-gutter">
+                <!-- Action Card -->
+                <div class="bg-surface-container-lowest border border-outline-variant p-8 rounded-lg whisper-shadow">
+                    <h4 class="font-headline-md text-headline-md mb-2">Request Configuration</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-8">Our engineers will provide a
+                        custom solution tailored to your specific material and throughput requirements.</p>
+                    <div class="space-y-4">
+                        <button
+                            class="w-full bg-primary-container text-on-primary-container py-5 rounded-lg font-label-caps uppercase flex justify-center items-center gap-3 hover:opacity-90 transition-all">
+                            <span class="material-symbols-outlined">description</span>
+                            Download Brochure (PDF)
+                        </button>
+                        <button
+                            class="w-full border-2 border-primary text-primary py-5 rounded-lg font-label-caps uppercase flex justify-center items-center gap-3 hover:bg-primary/5 transition-all">
+                            <span class="material-symbols-outlined">question_answer</span>
+                            Inquire via WhatsApp
+                        </button>
+                        <button
+                            class="w-full border border-secondary text-secondary py-5 rounded-lg font-label-caps uppercase flex justify-center items-center gap-3 hover:bg-secondary/5 transition-all">
+                            <span class="material-symbols-outlined">mail</span>
+                            Request Quote
+                        </button>
+                    </div>
+                </div>
+                <!-- Trust Indicators -->
+                <div class="p-8 border border-outline-variant rounded-lg bg-white">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg">
+                            <span class="material-symbols-outlined text-primary">security</span>
+                        </div>
+                        <div>
+                            <div class="font-bold font-body-lg">5-Year Extended Warranty</div>
+                            <p class="text-on-surface-variant text-body-md">Comprehensive coverage including on-site
+                                technical support within 24 hours.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg">
+                            <span class="material-symbols-outlined text-primary">public</span>
+                        </div>
+                        <div>
+                            <div class="font-bold font-body-lg">Global Deployment</div>
+                            <p class="text-on-surface-variant text-body-md">Seamless installation and training anywhere
+                                in the world by OBT certified experts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Related Products Section -->
+        <section class="mt-section-gap">
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-outline-variant w-full py-section-gap">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+            <div class="col-span-1 md:col-span-1">
+                <div class="font-display-lg text-headline-md text-primary mb-6">OBT Ltd</div>
+                <p class="text-on-surface-variant font-body-md">Pioneers in high-precision engineering solutions and
+                    industrial consulting since 1998.</p>
+            </div>
+            <div class="col-span-1">
+                <h5 class="font-label-caps uppercase text-on-surface mb-6">Resources</h5>
+                <ul class="space-y-4">
+                    <li class=""><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors"
+                            href="#">Compliance</a></li>
+                    <li class=""><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors"
+                            href="#">Sustainability</a></li>
+                    <li class=""><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors"
+                            href="#">Global Offices</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h5 class="font-label-caps uppercase text-on-surface mb-6">Legal</h5>
+                <ul class="space-y-4">
+                    <li class=""><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors"
+                            href="#">Privacy Policy</a></li>
+                    <li class=""><a class="text-on-surface-variant font-body-md hover:text-primary transition-colors"
+                            href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h5 class="font-label-caps uppercase text-on-surface mb-6">Newsletter</h5>
+                <div class="flex">
+                    <input
+                        class="bg-surface-container border-none rounded-l-lg p-3 w-full focus:ring-1 focus:ring-primary-container"
+                        placeholder="Email address" type="email">
+                    <button
+                        class="bg-primary text-white px-4 rounded-r-lg hover:bg-primary-fixed-dim transition-colors">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="px-margin-desktop max-w-container-max mx-auto mt-12 pt-8 border-t border-outline-variant">
+            <p class="text-on-surface-variant font-body-md">© 2024 OBT Ltd. All rights reserved. Precision Engineering
+                &amp; Consulting.</p>
+        </div>
+    </footer>
+    <script>
+        // Subtle interaction for image gallery
+        document.querySelectorAll('.group img').forEach(img => {
+            img.addEventListener('mousemove', (e) => {
+                const { left, top, width, height } = img.getBoundingClientRect();
+                const x = (e.clientX - left) / width;
+                const y = (e.clientY - top) / height;
+                img.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+            });
+        });
+    </script>
+</body>
+
+</html>

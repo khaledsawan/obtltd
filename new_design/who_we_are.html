@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Who We Are | OBT Ltd</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;600;700;800&amp;family=Manrope:wght@400;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed": "#ffe088",
+                        "on-secondary-container": "#636262",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-bright": "#f9f9f9",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#b4b2b2",
+                        "on-background": "#1a1c1c",
+                        "surface-tint": "#735c00",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#e2dfde",
+                        "on-primary-fixed-variant": "#574500",
+                        "surface-container": "#eeeeee",
+                        "primary": "#735c00",
+                        "inverse-primary": "#e9c349",
+                        "tertiary-fixed": "#e4e2e2",
+                        "primary-fixed-dim": "#e9c349",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "primary-container": "#d4af37",
+                        "secondary": "#5f5e5e",
+                        "outline": "#7f7663",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "tertiary": "#5e5e5e",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-primary-container": "#554300",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-primary-fixed": "#241a00",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "outline-variant": "#d0c5af",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-surface-variant": "#4d4635",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary-container": "#454545",
+                        "surface-dim": "#dadada"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Metropolis", "sans-serif"],
+                        "display": ["Metropolis", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    },
+                    spacing: {
+                        'margin-desktop': '80px',
+                        'margin-mobile': '20px',
+                        'section-gap': '120px',
+                        'container-max': '1440px',
+                        'gutter': '24px'
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .font-display-lg {
+            font-family: 'Metropolis';
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .text-display-lg {
+            font-size: 64px;
+        }
+
+        .text-headline-lg {
+            font-family: 'Metropolis';
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .text-headline-md {
+            font-family: 'Metropolis';
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .text-body-lg {
+            font-family: 'Manrope';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .text-body-md {
+            font-family: 'Manrope';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .label-caps {
+            font-family: 'Manrope';
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.0;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        @media (max-width: 768px) {
+            .font-display-lg {
+                font-size: 40px;
+            }
+
+            .text-headline-lg {
+                font-size: 32px;
+            }
+        }
+
+        .whisper-shadow {
+            shadow: 0px 10px 30px rgba(26, 26, 26, 0.04);
+        }
+
+        .industrial-gradient {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface">
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[819px] flex items-center overflow-hidden bg-surface-container-lowest">
+            <div class="absolute inset-0 z-0">
+                <img alt="Hero Architectural Image" class="w-full h-full object-cover opacity-20 grayscale"
+                    data-alt="A grand cinematic view of a modern industrial architectural structure with sharp geometric lines and steel beams. The lighting is cold and professional, reflecting a high-end corporate engineering environment. The background is mostly clean white and soft grays, punctuated by the structural clarity of deep charcoal steel. The atmosphere is quiet, powerful, and reflects industrial precision."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw8PGQ6WUdrpMIUQnL0hyzKY7ho5wa39cJALh3zDf3O-wAf76TQ7z2ZBIh44rT2zkTXp6RCwaru9CupvpqReALnaqwKsESk7_v5SFBoGFr6L_IWVRBhtb7mqS5LR8-0KpN_n9bDWzU0fA6xNBX2bn8aDo9T6NgFe49pB1jQZ-akkl_JSPK1FNyW9KFScYjr94WOQSDHRXIXWclMnsafx1zcn_fMZz5IF6xXn3u6Db4RdvbWt-OO7an3-b97DhwPUNiK1Bfbsq0" />
+                <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+            </div>
+            <div class="relative z-10 px-4 md:px-[80px] max-w-[1440px] mx-auto w-full">
+                <div class="max-w-3xl">
+                    <span class="label-caps text-primary-container mb-4 block">Established 1984</span>
+                    <h1 class="font-display-lg text-on-surface mb-6">Engineering Legacy.<br />Global Vision.</h1>
+                    <p class="text-body-lg text-secondary max-w-xl mb-10">
+                        Pioneering the intersection of mechanical rigor and sophisticated corporate strategy for over
+                        four decades. We don't just build infrastructure; we engineer certainty.
+                    </p>
+                    <div class="flex space-x-6">
+                        <div class="h-px w-24 bg-primary-container self-center"></div>
+                        <span class="text-body-md font-bold text-on-surface tracking-widest uppercase">The Gold Standard
+                            of Industry</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mission Section: Bento Grid Layout -->
+        <section class="py-[120px] bg-surface">
+            <div class="px-4 md:px-[80px] max-w-[1440px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end mb-16">
+                    <div class="lg:col-span-7">
+                        <span class="label-caps text-primary mb-4 block">Our Mission</span>
+                        <h2 class="text-headline-lg text-on-surface">Our Commitment to Precision</h2>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <p class="text-body-md text-secondary">At OBT Ltd, precision is not a metric; it is our ethos.
+                            We deliver technical rigor that transforms complex industrial challenges into seamless
+                            global operations.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <!-- Bento Item 1 -->
+                    <div
+                        class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl border border-outline-variant hover:shadow-[0px_10px_30px_rgba(26,26,26,0.04)] transition-all group">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 group-hover:scale-110 transition-transform">architecture</span>
+                        <h3 class="text-headline-md mb-4">Technical Rigor</h3>
+                        <p class="text-body-md text-secondary mb-8">Utilizing advanced computational modeling and legacy
+                            engineering wisdom to ensure every project exceeds safety and performance standards.</p>
+                        <img alt="Technical Rigor Image"
+                            class="w-full h-64 object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-500"
+                            data-alt="Detailed close-up of high-precision mechanical blueprints and a stainless steel caliper resting on a clean white desk. The lighting is bright and editorial, highlighting the metallic textures and the fine lines of the technical drawings. The aesthetic is professional, minimalist, and focuses on the beauty of engineering accuracy."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6VdRAyElb4coMok0-jybrQOd826-QOs9ah9Qv9n_tWTkjWlmH0iky6xpdsDvhsw46nUvqnFLoKSTjHvD1D-dtX3DkHmmmZktlXwakZ6f96Qo_AZLrw2v42pE51QvE5fDQT2K5IXpY2_wAtMo5cEXLm-JuWQAqByE-LFYt4gpQzI6k_OaUb2HNmdXIX4gVUkzP62FvxvwFqbkl0j7w1P6qiB5lK8w7l0E0UpbxrH09TN6dOA7j_DMoHUkpiGBbAYchrdGkoO-I" />
+                    </div>
+                    <!-- Bento Item 2 -->
+                    <div
+                        class="bg-primary-container p-10 rounded-xl text-on-primary-container flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-headline-md mb-4">Industrial Excellence</h3>
+                            <p class="text-body-md opacity-90">Executing at the highest tier of global manufacturing and
+                                logistics standards.</p>
+                        </div>
+                        <div class="mt-12">
+                            <div class="text-6xl font-display font-bold mb-2">99.9%</div>
+                            <div class="label-caps">Accuracy Rating</div>
+                        </div>
+                    </div>
+                    <!-- Bento Item 3 -->
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant flex flex-col justify-between hover:shadow-[0px_10px_30px_rgba(26,26,26,0.04)] transition-all">
+                        <div>
+                            <span class="material-symbols-outlined text-primary text-4xl mb-6">shield</span>
+                            <h3 class="text-headline-md mb-4">Discreet Authority</h3>
+                            <p class="text-body-md text-secondary">Providing high-level consultancy for confidential
+                                infrastructure projects worldwide.</p>
+                        </div>
+                        <a class="mt-8 flex items-center text-primary font-bold group" href="#">
+                            View Standards
+                            <span
+                                class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Bento Item 4 -->
+                    <div
+                        class="md:col-span-2 relative overflow-hidden rounded-xl border border-outline-variant h-[300px]">
+                        <img alt="Industrial Vision"
+                            class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale"
+                            data-alt="A wide panoramic view of a massive modern industrial factory floor, clean and illuminated with bright white fluorescent lights. The scene shows high-tech robotics and heavy machinery arranged in perfect rows. The composition is symmetrical and reinforces the concept of large-scale engineering order and efficiency. Subtle gold accents are picked up in the machinery safety lines."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Vnzmre_kLTcF_rAxBtqnZXJVDdkJOeDpQZXzq632XVaBTV591u7PQGymFyAtmF09_LcR1X_kx-4aRbsYNuZdVD_Wza2rWnvSI9439fTH56I9TSFl8tQN4_OoiaZdA9gP25ZUM59gwt9c0pLU73NoVIX34krJg8kfG9i56PhfTHYBMXECJHzjLu9t4C5bF2zATjeQZMAVccE-V4eVSulhuDUHRzjXCmBSJM6NSLCYvmlwHHCFI849KM3kwRo5dg_zIYps16Q3" />
+                        <div
+                            class="absolute inset-0 p-10 flex flex-col justify-end bg-gradient-to-t from-surface-container-lowest to-transparent">
+                            <h3 class="text-headline-md mb-2">Future-Proofing Infrastructure</h3>
+                            <p class="text-body-md text-secondary">Integrating IoT and AI into legacy mechanical
+                                systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Leadership Section -->
+        <section class="py-[120px] bg-surface-container-lowest">
+            <div class="px-4 md:px-[80px] max-w-[1440px] mx-auto">
+                <div class="text-center mb-20">
+                    <span class="label-caps text-primary mb-4 block">Executive Team</span>
+                    <h2 class="text-headline-lg mb-4">Guiding the Front Line of Innovation</h2>
+                    <div class="h-1 w-20 bg-primary-container mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-[48px]">
+                    <!-- Leader 1 -->
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl mb-6 aspect-[4/5] bg-surface-container">
+                            <img alt="CEO Portrait"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                data-alt="A professional portrait of a senior male executive in a charcoal tailored suit, standing in a brightly lit modern office with glass walls. He has a confident, authoritative expression. The background is minimalist and high-end, featuring subtle metallic finishes and soft white highlights. The style is editorial, resembling a feature in a premium business magazine."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvZdY1XjlEbdWqkAoUrUf_8uEjKOBge9_rVrKOzmRd0pBVztYLsF9f_lNdsBeKcG8PdKruFV3DhNgbGBe_v4mWYUCtRYDAA-jt1W_hTrxqcFaaZqFyDP1XPUOZpJGq3MkZvq32qkHd3hMM6M23oA2MgyVN_bMc2EY_G__RXHidPI1qAitdybjCs1JCyotgplh4Zirmf_3cZavWrkVIdjnrUG7UUU6uofne7yVwkodpjcaE3IOqDViRJijxCjICJ5Y7ysTlN1K7" />
+                            <div
+                                class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <h4 class="text-headline-md">Marcus Thorne</h4>
+                        <p class="label-caps text-primary mb-3">Chief Executive Officer</p>
+                        <p class="text-body-md text-secondary">30+ years in structural engineering and global logistics
+                            management. Former head of European Industrial Alliance.</p>
+                    </div>
+                    <!-- Leader 2 -->
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl mb-6 aspect-[4/5] bg-surface-container">
+                            <img alt="CTO Portrait"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                data-alt="A professional portrait of a senior female engineering executive with a focus on technical leadership. She is dressed in a smart navy blazer, posing against a backdrop of architectural sketches and clean white walls. Her expression is approachable yet highly professional. The lighting is soft and flattering, maintaining a high-contrast luxury aesthetic."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6_XYaSR9XxzSB3jq9a34oyyOHYOI4ZCY3gG_LQndO0dRqmKP0_WyXtAyrAiL6oX0qKS6K9Ly7DbxVccQG0zzxFjWO2CTYh5ZXV1jgl7zO8nr2K2SRBDvWj36HSaJbnJoI5yFj07rYQPM3TACJg7WcqNpXiaj00H4e_wJGX9ESl4YTiytvCC-oUKH6z7vU-OT8ovo1B8AqMxL2IFicCkQZ3ZGuTIy-F_1AxCgXLT2Z3BQvJTLCTVosgkTnf1jtBfL9ZeovOG5W" />
+                            <div
+                                class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <h4 class="text-headline-md">Dr. Helena Vogt</h4>
+                        <p class="label-caps text-primary mb-3">Chief Technical Officer</p>
+                        <p class="text-body-md text-secondary">Ph.D. in Aerospace Engineering. Specialist in
+                            high-tolerance manufacturing and automation systems.</p>
+                    </div>
+                    <!-- Leader 3 -->
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl mb-6 aspect-[4/5] bg-surface-container">
+                            <img alt="COO Portrait"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                data-alt="A professional portrait of a middle-aged male executive, standing in a minimalist gallery-like office. He is wearing a high-quality light gray suit and has a thoughtful, strategic expression. The background features a large abstract painting in muted tones. The overall look is one of quiet luxury and corporate authority."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTBF1oC43Rb-t9-XCJiAAXARYc5iNHp9vvmA0tnzQ9LChXkYBaUhQKiM536QE2UYS9J6Uh9p-Efro2uKrSvLoLlnfutSZhZryuktzyjk0RRmIu9135RjkXxlCyJ9uM_6ygiIQ_v2CP4PGv5_UlFmFSIiq0ff3iXkYILj_3EoN0jZ6WiNCLuQTDPDqTsMQiUlaN0l8WmfiQHbZj6JHe44Tncr0PnximdIrcaF1SdKlqiOoW95UTXyCE4lofrY20yaWEsXqzJ5-A" />
+                            <div
+                                class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <h4 class="text-headline-md">Julian Chen</h4>
+                        <p class="label-caps text-primary mb-3">Chief Operations Officer</p>
+                        <p class="text-body-md text-secondary">Expert in global supply chain optimization and strategic
+                            industrial consulting across Asian markets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Global Footprint Section -->
+        <section class="py-[120px] bg-on-surface text-surface overflow-hidden relative">
+            <div class="px-4 md:px-[80px] max-w-[1440px] mx-auto relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+                    <div>
+                        <span class="label-caps text-primary-fixed mb-4 block">Global Footprint</span>
+                        <h2 class="text-display-lg text-white mb-8">Reach Without<br />Boundaries.</h2>
+                        <div class="space-y-12">
+                            <div class="border-l-2 border-primary-container pl-8">
+                                <h4 class="text-headline-md text-white">London</h4>
+                                <p class="text-body-md opacity-70">Headquarters &amp; Strategic Consulting. Located in
+                                    the heart of the financial district.</p>
+                            </div>
+                            <div class="border-l-2 border-primary-container pl-8">
+                                <h4 class="text-headline-md text-white">Singapore</h4>
+                                <p class="text-body-md opacity-70">Asian Logistics Hub &amp; R&amp;D Center. Pioneering
+                                    smart manufacturing for the region.</p>
+                            </div>
+                            <div class="border-l-2 border-primary-container pl-8">
+                                <h4 class="text-headline-md text-white">Munich</h4>
+                                <p class="text-body-md opacity-70">Engineering Excellence &amp; Precision Manufacturing.
+                                    The core of our technical development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="aspect-square bg-surface/5 rounded-full flex items-center justify-center p-8 border border-surface/10">
+                            <div class="w-full h-full rounded-full overflow-hidden grayscale opacity-40">
+                                <!-- Mock Map Representation -->
+                                <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&amp;w=2033&amp;auto=format&amp;fit=crop')] bg-cover bg-center"
+                                    data-location="World Map" style=""></div>
+                            </div>
+                            <!-- Floating Pins -->
+                            <div
+                                class="absolute top-[30%] left-[45%] w-4 h-4 bg-primary rounded-full shadow-[0_0_20px_#D4AF37]">
+                            </div>
+                            <div
+                                class="absolute top-[60%] left-[80%] w-4 h-4 bg-primary rounded-full shadow-[0_0_20px_#D4AF37]">
+                            </div>
+                            <div
+                                class="absolute top-[25%] left-[50%] w-4 h-4 bg-primary rounded-full shadow-[0_0_20px_#D4AF37]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Background texture/pattern -->
+            <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">
+                <svg class="w-full h-full fill-current" viewbox="0 0 100 100">
+                    <pattern height="10" id="grid" patternunits="userSpaceOnUse" width="10">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.1"></path>
+                    </pattern>
+                    <rect fill="url(#grid)" height="100" width="100"></rect>
+                </svg>
+            </div>
+        </section>
+        <!-- Values Section -->
+        <section class="py-[120px] bg-surface-container-lowest">
+            <div class="px-4 md:px-[80px] max-w-[1440px] mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-24">
+                    <div class="max-w-2xl">
+                        <h2 class="text-display-lg text-on-surface mb-0">Precision, Integrity, Innovation.</h2>
+                    </div>
+                    <div class="mt-8 md:mt-0">
+                        <button
+                            class="bg-on-surface text-surface px-10 py-4 rounded-lg font-bold text-body-md hover:bg-primary transition-all">Join
+                            Our Legacy</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-outline-variant">
+                    <div
+                        class="p-12 border-r border-outline-variant hover:bg-surface-container-low transition-colors duration-500">
+                        <span class="text-display-lg text-outline-variant opacity-20 block mb-8">01</span>
+                        <h3 class="text-headline-md mb-6">Absolute Precision</h3>
+                        <p class="text-body-md text-secondary">We believe that a single millimeter can be the difference
+                            between failure and world-class performance. Our tolerance levels are the tightest in the
+                            industry.</p>
+                    </div>
+                    <div
+                        class="p-12 border-r border-outline-variant hover:bg-surface-container-low transition-colors duration-500">
+                        <span class="text-display-lg text-outline-variant opacity-20 block mb-8">02</span>
+                        <h3 class="text-headline-md mb-6">Unwavering Integrity</h3>
+                        <p class="text-body-md text-secondary">Transparency in our processes and ethics in our
+                            engineering. We act as long-term partners to our clients, ensuring their reputation is as
+                            solid as ours.</p>
+                    </div>
+                    <div class="p-12 hover:bg-surface-container-low transition-colors duration-500">
+                        <span class="text-display-lg text-outline-variant opacity-20 block mb-8">03</span>
+                        <h3 class="text-headline-md mb-6">Driven Innovation</h3>
+                        <p class="text-body-md text-secondary">Innovation is not a buzzword; it is a necessity. We
+                            constantly refine our technical toolkit to incorporate the latest in sustainable industrial
+                            technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Lightweight scroll interaction for the header
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('h-20');
+                nav.classList.add('h-16');
+            } else {
+                nav.classList.remove('py-2');
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16');
+            }
+        });
+
+        // Reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                    entry.target.classList.add('translate-y-0');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'ease-out');
+        });
+    </script>
+</body>
+
+</html>
